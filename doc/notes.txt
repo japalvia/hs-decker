@@ -1,0 +1,21 @@
+MANAGE MY HEARTHSTONE COLLECTION
+================================
+
+This project is an experiment for managing Hearthstone decks for my personal
+collection.
+
+The plan
+--------
+
+Collect card data using https://hearthstonejson.com/
+wget https://api.hearthstonejson.com/v1/latest/enUS/cards.collectible.json
+
+Collect card images using https://github.com/schmich/hearthstone-card-images
+The repo contains images and JSON mapping from card ID to image ID and also
+direct github content URL. For now, pull the repo and use the data locally (the
+usage terms forbids direct referring to github links and recommends local
+caching in any case).
+
+Collect my personal card collection as JSON data: find each card name and ID in
+cards.collectible.json. Be careful when identifying the cards, there are many
+with similar name or other variations. Look for the cost and text.
