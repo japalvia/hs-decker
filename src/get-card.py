@@ -1,6 +1,7 @@
 #!/bin/env python
 
-# Read Hearthstone card name and try to return corresponding JSON object
+# Read Hearthstone card name and try to return corresponding JSON encoded object
+# and serialize it to JSON formatted str to stdout.
 
 import json
 import sys
@@ -13,8 +14,8 @@ def main():
         data = json.load(f)
         for d in data:
             if d['name'] == name:
-                print(json.dumps(d))
-                break
+                json.dump(d, sys.stdout)
+                return
 
         sys.exit("Card not found")
 
