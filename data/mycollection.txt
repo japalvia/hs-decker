@@ -1,0 +1,38 @@
+# Mage
+2   Arcane Missiles
+2   Babbling Book
+2   Breath of Sindragosa
+1   Kabal Lackey
+2   Mana Wyrm
+2   Mirror Image
+2   Arcane Explosion
+2   Arcanologist
+2   Flame Geyser
+2   Frostbolt
+2   Ice Walker
+2   Medivh's Valet
+1   Primordial Glyph
+2   Shimmering Tempest
+2   Sorcerer's Apprentice
+2   Arcane Intellect
+2   Coldwraith
+2   Counterspell
+2   Doomed Apprentice
+2   Frost Nova
+2   Frozen Clone
+1   Ice Barrier
+1   Ice Block
+1   Kirin Tor Mage
+1   Mana Bind
+2   Mirror Entity
+1   Cone of Cold
+1   Ethereal Arcanist
+2   Fireball
+2   Ghastly Conjurer
+2   Polymorph
+2   Water Elemental
+1   Archmage Antonidas
+2   Firelands Portal
+2   Flamestrike
+1   Glacial Mysteries
+2   Pyroblast
