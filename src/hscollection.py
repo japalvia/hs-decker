@@ -20,7 +20,7 @@ class HSCollection:
         with open(collectible) as f:
             self.cards_collectible = json.load(f)
 
-    def card2json(name):
+    def card2json(self, name):
         for c in self.cards_collectible:
             if c['name'] == name:
                 return c
@@ -34,11 +34,12 @@ class HSCollection:
             print("Initializing empty collection")
             self.mycollection = json.loads('[]')
 
-    def add_card(name, count):
+    def add_card(self, name, count):
+        count = int(count)
         if count != 1 and count != 2:
-            self.error("Card count ({}) must be 1 or 2".format(count))
+            self.error("Card count ({}) must be (1) or (2)".format(count))
 
-        card = card2json(name)
+        card = self.card2json(name)
         if not card:
             self.error("Card not found: {}".format(name))
         card['count'] = count
@@ -59,7 +60,7 @@ class HSCollection:
         if new_card:
            self.mycollection.append(card)
 
-    def save_mycollection(self):
+    def save(self):
         with open(self.mycollection_path, 'w') as f:
             f.write(json.dumps(self.mycollection))
 
@@ -90,4 +91,10 @@ if __name__ == "__main__":
 
     collection = HSCollection(args.collectible, args.mycollection)
 
+    if args.card:
+        collection.add_card(args.card, args.count)
+    elif args.list:
+        collection.add_from_file(args.list)
+
+    collection.save()
 
