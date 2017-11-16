@@ -35,5 +35,23 @@
 2   Firelands Portal
 2   Flamestrike
 1   Glacial Mysteries
-
 2   Pyroblast
+
+# Neutral
+2   Snowflipper Penguin
+2   Acherus Veteran
+2   Arcane Anomaly
+2   Argent Squire
+2   Deadscale Knight
+2   Elven Archer
+1   Emerald Hive Queen
+1   Emerald Reaver
+2   Fire Fly
+2   Glacial Shard
+2   Goldshire Footman
+2   Grimscale Oracle
+1   Leper Gnome
+1   Lightwarden
+2   Murloc Raider
+1   Murloc Tidecaller
+
