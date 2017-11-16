@@ -67,7 +67,8 @@ class HSCollection:
     def add_from_file(self, path):
         with open(path) as f:
             for line in f:
-                if line.startswith('#'):
+                # empty lines and comments
+                if not line.strip() or line.startswith('#'):
                     continue
                 arr = line.split(' ', 1)
                 count = arr[0]

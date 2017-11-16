@@ -35,4 +35,5 @@
 2   Firelands Portal
 2   Flamestrike
 1   Glacial Mysteries
+
 2   Pyroblast
