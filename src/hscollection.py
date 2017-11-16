@@ -13,6 +13,9 @@ class HSCollection:
         self.load_collectible(collectible_path)
         self.load_mycollection(mycollection_path)
 
+    def error(self, message):
+        sys.exit(message)
+
     def load_collectible(self, collectible):
         with open(collectible) as f:
             self.cards_collectible = json.load(f)
@@ -33,13 +36,11 @@ class HSCollection:
 
     def add_card(name, count):
         if count != 1 and count != 2:
-       	    error("Card count ({}) must be 1 or 2".format(count))
-            return
+            self.error("Card count ({}) must be 1 or 2".format(count))
 
         card = card2json(name)
         if not card:
-            error("Card not found: {}".format(name))
-            return
+            self.error("Card not found: {}".format(name))
         card['count'] = count
 
         new_card = True
@@ -52,7 +53,7 @@ class HSCollection:
                     print("Already in collection: {} (2)".format(c['name']))
                     return
                 else:
-                    error("Card {} count is unexpected: {}"
+                    self.error("Card {} count is unexpected: {}"
                           .format(c['name'], c['count']))
                 break
         if new_card:
