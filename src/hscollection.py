@@ -64,8 +64,15 @@ class HSCollection:
         with open(self.mycollection_path, 'w') as f:
             f.write(json.dumps(self.mycollection))
 
-    def add_from_file(path):
-        pass
+    def add_from_file(self, path):
+        with open(path) as f:
+            for line in f:
+                if line.startswith('#'):
+                    continue
+                arr = line.split(' ', 1)
+                count = arr[0]
+                card = arr[1].strip()
+                self.add_card(card, count)
 
 def usage():
     print("Usage: {} <card name> <count>".format(sys.argv[0]), file=sys.stderr)
@@ -86,7 +93,7 @@ if __name__ == "__main__":
     parser.add_argument('--count', help='card count: 1 or 2')
 
     args = parser.parse_args()
-    if (args.card and not args.count) or (not args.card and argc.count):
+    if (args.card and not args.count) or (not args.card and args.count):
         bad_usage("--card and --count must be used together")
 
     collection = HSCollection(args.collectible, args.mycollection)
