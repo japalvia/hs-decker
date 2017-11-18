@@ -23,6 +23,19 @@ with similar name or other variations. Look for the cost and text.
 Usage
 -----
 
-Add card to my collection:
+* Bootstrap card data once:
+./src/bootstrap.py
 
-./src/add-to-collection.py "Babbling Book" 1
+* Generate JSON formatted collection from card list:
+./src/hscollection.py \
+    -c data/cards.collectible.json \
+    -m data/mycollection.json \
+    --list data/mycollection.txt
+
+Cards are always added, delete mycollection.json when using single card list.
+
+* Add JSON formatted card to collection by name and count:
+./src/hscollection.py \
+	-c data/cards.collectible.json \
+	-m data/mycollection.json \
+	--card "Arcane Missiles" --count 2
