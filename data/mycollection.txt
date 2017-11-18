@@ -1,11 +1,11 @@
 # Mage
-2   Arcane Missiles
+2   Arcane Missiles         # +2 golden
 2   Babbling Book
 2   Breath of Sindragosa
 1   Kabal Lackey
 2   Mana Wyrm
 2   Mirror Image
-2   Arcane Explosion
+2   Arcane Explosion        # +2 golden
 2   Arcanologist
 2   Flame Geyser
 2   Frostbolt
@@ -14,12 +14,12 @@
 1   Primordial Glyph
 2   Shimmering Tempest
 2   Sorcerer's Apprentice
-2   Arcane Intellect
-2   Coldwraith
+2   Arcane Intellect        # +2 golden
+2   Coldwraith              # +1 golden
 2   Counterspell
-2   Doomed Apprentice
-2   Frost Nova
-2   Frozen Clone
+2   Doomed Apprentice       # +1 golden
+2   Frost Nova              # +2 golden
+2   Frozen Clone            # +1 golden
 1   Ice Barrier
 1   Ice Block
 1   Kirin Tor Mage
@@ -83,7 +83,7 @@
 2   Kobold Geomancer
 2   Mad Bomber
 1   Mana Addict
-1   Mana Wraith
+1   Mana Wraith         # 1 golden
 1   Master Swordsmith
 2   Murloc Tidehunter
 2   Netherspite Historian
@@ -122,7 +122,7 @@
 2   Jungle Panther          # 1 golden
 2   Kabal Courier
 2   Magma Rager
-1   Mindbreaker
+1   Mindbreaker             # 1 golden
 1   Moroes
 2   Pantry Spider
 2   Primalfin Lookout
@@ -138,7 +138,7 @@
 1   Street Trickster
 2   Tar Creeper
 2   Tauren Warrior
-2   Thrallmar Farseer       # i golden
+2   Thrallmar Farseer       # 1 golden
 2   Vicious Fledgling
 2   Violet Illusionist
 2   Vryghoul
@@ -185,7 +185,7 @@
 2   Bloodworm
 2   Booty Bay Bodyguard
 2   Cobalt Scalebane
-1   Corpse Raiser
+1   Corpse Raiser           # 1 golden
 1   Corrupted Healbot
 2   Darkscale Healer
 2   Fen Creeper
@@ -212,5 +212,36 @@
 2   Book Wyrm
 2   Boulderfist Ogre
 1   Fight Promoter
-
+2   Frost Elemental
+2   Furnacefire Colossus
+2   Lord of the Arena
+2   Moat Lurker
+2   Necrotic Geist
+1   Priestess of Elune
+2   Reckless Rocketeer
+2   Sabretooth Stalker
+1   Skulking Geist
+2   Spellweaver         # +1 golden
+2   Windfury Harpy
+2   Bonemare
+2   Core Hound
+1   Grotesque Dragonhawk
+2   Ravenholdt Assassin # +1 golden
+1   Sated Threshadon
+2   Stormwind Champion
+1   The Curator
+1   Volcanosaur
+2   War Golem
+1   Charged Devilsaur
+1   Gruul
+1   Marin the Fox
+1   Medivh, the Guardian
+1   The Lich King
+2   Giant Mastodon
+1   C'Thun
+1   N'Zoth, The Corruptor
+2   Ultrasaur
+2   Arcane Giant
+1   Mountain Giant
+1   Molten Giant
 
