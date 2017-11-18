@@ -62,7 +62,7 @@
 2   Stonetusk Boar
 1   Tentacle of N'Zoth
 2   Voodoo Doctor
-1   Worgen infiltrator
+1   Worgen Infiltrator
 2   Wretched Tiller
 2   Young Dragonhawk
 1   Young Priestess
@@ -119,8 +119,7 @@
 2   Ironbeak Owl
 2   Ironforge Rifleman
 2   Ironfur Grizzly
-#   1 golden gungle panther
-2   Jungle Panther
+2   Jungle Panther          # 1 golden
 2   Kabal Courier
 2   Magma Rager
 1   Mindbreaker
@@ -139,8 +138,7 @@
 1   Street Trickster
 2   Tar Creeper
 2   Tauren Warrior
-# 1 golden thrallmar farseer
-2   Thrallmar Farseer
+2   Thrallmar Farseer       # i golden
 2   Vicious Fledgling
 2   Violet Illusionist
 2   Vryghoul

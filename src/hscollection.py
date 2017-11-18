@@ -67,13 +67,20 @@ class HSCollection:
     def add_from_file(self, path):
         with open(path) as f:
             for line in f:
-                # empty lines and comments
-                if not line.strip() or line.startswith('#'):
+                line = line.strip()
+                # sys.stdout.write("process line: {}".format(line))
+                if not line:
+                    print("Skip empty line")
                     continue
-                arr = line.split(' ', 1)
-                count = arr[0]
-                card = arr[1].strip()
-                self.add_card(card, count)
+                parts = line.split('#', 1)
+                if len(parts[0]) == 0: # line starts with comment
+                    print("comment line: {}".format(parts[1]))
+                    continue
+                if len(parts) > 1:
+                    print("data: [{}] comment: [{}]".
+                          format(parts[0], parts[1]))
+                data = parts[0].split(' ', 1)
+                self.add_card(data[1].strip(), data[0])
 
 def usage():
     print("Usage: {} <card name> <count>".format(sys.argv[0]), file=sys.stderr)
