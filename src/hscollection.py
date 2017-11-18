@@ -14,7 +14,7 @@ class HSCollection:
         self.load_mycollection(mycollection_path)
 
     def error(self, message):
-        sys.exit(message)
+        sys.exit('ERROR:' + message)
 
     def load_collectible(self, collectible):
         with open(collectible) as f:

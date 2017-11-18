@@ -148,5 +148,69 @@
 1   Ancient Mage
 2   Arcanosmith
 1   Barnes
+2   Chillwind Yeti
+2   Cult Master
+1   Cyclopian Horror
+1   Daring Reporter
+2   Dragonling Mechanic
+2   Dread Corsair
+1   Evolved Kobold
+2   Fire Plume Phoenix
+2   Gnomish Inventor
+2   Grave Shambler
+2   Hozen Healer
+2   Jade Spirit
+1   Kabal Chemist
+2   Keening Banshee
+1   Kooky Chemist
+1   Mogu'shan Warden
+2   Naga Corsair
+2   Night Howler
+2   Oasis Snapjaw
+2   Ogre Magi
+2   Phantom Freebooter
+2   Saronite Chain Gang
+2   Sen'jin Shieldmasta
+2   Silvermoon Guardian
+1   Spellbreaker
+2   Stegodon
+2   Stormwind Knight
+1   Tanaris Hogchopper
+2   Ticking Abomination
+1   Twilight Drake
+2   Wicked Skeleton
+1   Worgen Greaser
+1   Abomination
+2   Avian Watcher
+2   Bloodworm
+2   Booty Bay Bodyguard
+2   Cobalt Scalebane
+1   Corpse Raiser
+1   Corrupted Healbot
+2   Darkscale Healer
+2   Fen Creeper
+2   Frostwolf Warlord
+2   Gurubashi Berserker
+2   Menagerie Magician
+1   Nesting Roc
+2   Nightblade
+1   Prince Malchezaar
+1   Servant of Kalimos
+2   Silver Hand Knight
+2   Skelemancer
+2   Spiteful Smith
+2   Stampeding Kodo
+2   Stormpike Commando
+2   Stranglethorn Tiger
+1   Streetwise Investigator
+2   Sunborne Val'kyr
+2   Venomancer
+1   Venture Co. Mercenary
+2   Archmage
+1   Big-Time Racketeer
+2   Bone Drake
+2   Book Wyrm
+2   Boulderfist Ogre
+1   Fight Promoter
 
 
