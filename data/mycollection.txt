@@ -239,7 +239,7 @@
 1   The Lich King
 2   Giant Mastodon
 1   C'Thun
-1   N'Zoth, The Corruptor
+1   N'Zoth, the Corruptor
 2   Ultrasaur
 2   Arcane Giant
 1   Mountain Giant
