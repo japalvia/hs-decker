@@ -4,6 +4,9 @@ import argparse
 import json
 import sys
 
+from hearthstone.deckstrings import Deck
+from hearthstone.enums import FormatType, Rarity
+
 class HSCollection:
     def __init__(self, collectible_path, mycollection_path):
         self.mycollection_path = mycollection_path
@@ -82,6 +85,25 @@ class HSCollection:
                 data = parts[0].split(' ', 1)
                 self.add_card(data[1].strip(), data[0])
 
+    def load_deckstring(self, deckstring):
+        print("\n### Checking cards in my collection ###\n")
+        deck = Deck.from_deckstring(deckstring)
+        total_cost = 0
+        for (dbfId, count) in deck.cards:
+            count = int(count)
+            for card in self.mycollection:
+                if card['dbfId'] == dbfId:
+                    sys.stdout.write("{} ... ".format(card['name']))
+                    if card['count'] >= count:
+                        print("OK")
+                    else:
+                        missing = count - card['count']
+                        cost = Rarity[card['rarity']].crafting_costs[0]
+                        cost *= missing
+                        total_cost += cost
+                        print("missing ({}) card(s): {} dust".format(missing, cost))
+        print("\n### Requires {} dust ###\n".format(total_cost))
+
 def usage():
     print('Usage: {} <card name> <count>'.format(sys.argv[0]), file=sys.stderr)
 
@@ -95,23 +117,28 @@ if __name__ == '__main__':
     parser.add_argument('-m', '--mycollection', help='mycollection.json')
 
     group = parser.add_mutually_exclusive_group()
+    group.add_argument('--string', help='deck string')
     group.add_argument('--list', help='cards to add listed in a file')
     group.add_argument('--card', help='card name')
-
     parser.add_argument('--count', help='card count: 1 or 2')
 
     args = parser.parse_args()
-    if (args.card and not args.count) or (not args.card and args.count):
-        bad_usage('--card and --count must be used together')
 
     collection = HSCollection(args.collectible, args.mycollection)
 
+    # Operations for constructing a deck with deck string from collection.
+    if args.string:
+        collection.load_deckstring(args.string)
+        sys.exit(0)
+
+    # Operations for adding cards to mycollection.
+    if (args.card and not args.count) or (not args.card and args.count):
+        bad_usage('--card and --count must be used together')
     if args.card:
         collection.add_card(args.card, args.count)
     elif args.list:
         collection.add_from_file(args.list)
     else:
         bad_usage('--list or --card is required')
-
     collection.save()
 
