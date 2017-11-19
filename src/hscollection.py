@@ -85,15 +85,24 @@ class HSCollection:
                 data = parts[0].split(' ', 1)
                 self.add_card(data[1].strip(), data[0])
 
+    def Id2name(self, dbfId):
+        for c in self.cards_collectible:
+            if c['dbfId'] == dbfId:
+                return c['name']
+        return None
+
     def load_deckstring(self, deckstring):
         print("\n### Checking cards in my collection ###\n")
         deck = Deck.from_deckstring(deckstring)
         total_cost = 0
         for (dbfId, count) in deck.cards:
             count = int(count)
+            found = False
+            sys.stdout.write("{} ... ".format(self.Id2name(dbfId)))
+            # TODO: is there a better lookup than iterating whole list?
             for card in self.mycollection:
                 if card['dbfId'] == dbfId:
-                    sys.stdout.write("{} ... ".format(card['name']))
+                    found = True
                     if card['count'] >= count:
                         print("OK")
                     else:
@@ -101,7 +110,13 @@ class HSCollection:
                         cost = Rarity[card['rarity']].crafting_costs[0]
                         cost *= missing
                         total_cost += cost
-                        print("missing ({}) card(s): {} dust".format(missing, cost))
+                        print("missing ({}): {} dust".format(missing, cost))
+            if not found:
+                missing = 2
+                cost = Rarity[card['rarity']].crafting_costs[0]
+                cost *= missing
+                total_cost += cost
+                print("missing ({}): {} dust".format(missing, cost))
         print("\n### Requires {} dust ###\n".format(total_cost))
 
 def usage():
