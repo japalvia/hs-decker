@@ -29,7 +29,7 @@ class HSCollection:
                 return c
         return None
 
-    def card_by_Id(self, dbfId):
+    def collectible_by_Id(self, dbfId):
         for c in self.cards_collectible:
             if c['dbfId'] == dbfId:
                 return c
@@ -90,10 +90,13 @@ class HSCollection:
                 data = parts[0].split(' ', 1)
                 self.add_card(data[1].strip(), data[0])
 
-
     def crafting_cost(self, card, count):
         cost = Rarity[card['rarity']].crafting_costs[0]
         return cost * count
+
+    def readable_set(self, card):
+        # TODO: dictionary or other mapping from python-hearthstone CardSet to str
+        pass
 
     def load_deckstring(self, deckstring):
         print("\n### Checking cards in my collection ###\n")
@@ -102,23 +105,26 @@ class HSCollection:
         for (dbfId, count) in deck.cards:
             count = int(count)
             found = False
+            sys.stdout.write(self.collectible_by_Id(dbfId)['name'].ljust(25))
             # TODO: is there a better lookup than iterating whole list?
             for card in self.mycollection:
                 if card['dbfId'] == dbfId:
                     found = True
                     if card['count'] >= count:
-                        print("{} OK".format(card['name']))
+                        print("OK")
                     else:
                         missing = count - card['count']
                         cost = self.crafting_cost(card, missing)
                         total_cost += cost
-                        print("{} missing ({}): {} dust".format(card['name'], missing, cost))
+                        print("missing ({}): {} dust ({})".
+                              format(missing, cost, card['set']))
             card = None
             if not found:
-                card = self.card_by_Id(dbfId)
+                card = self.collectible_by_Id(dbfId)
                 cost = self.crafting_cost(card, count)
                 total_cost += cost
-                print("{} missing ({}): {} dust".format(card['name'], count, cost))
+                print("missing ({}): {} dust ({})".
+                      format(count, cost, card['set']))
         print("\n### Requires {} dust ###\n".format(total_cost))
 
 def usage():
