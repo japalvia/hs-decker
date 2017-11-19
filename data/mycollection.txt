@@ -246,3 +246,38 @@
 1   Mountain Giant
 1   Molten Giant
 
+# Warlock
+2   Sacrificial Pact    # +2 golden
+1   Blood Imp
+2   Corruption          # +2 golden
+2   Flame Imp
+2   Malchezaar's Imp
+2   Mortal Coil
+2   Sanguine Reveler
+2   Soulfire            # +2 golden
+2   Voidwalker
+2   Corrupting Mist
+2   Defile
+2   Demonfire
+2   Drain Soul
+2   Succubus
+2   Drain Life
+2   Howlfiend
+1   Sense Demons
+2   Shadow Bolt
+2   Silverware Golem
+2   Treachery
+2   Unwilling Sacrifice
+2   Hellfire
+2   Lakkari Felhound
+2   Ravenous Pterrordax
+1   Seadevil Stinger
+1   Bane of Doom
+2   Despicable Dreadlord
+2   Feeding Time
+2   Kara Kazham!
+2   Tar Lurker
+1   Cruel Dinomancer
+2   Dread Infernal      # +2 golden
+1   Abyssal Enforcer
+1   Bloodreaver Gul'dan
