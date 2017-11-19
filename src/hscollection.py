@@ -134,7 +134,7 @@ if __name__ == '__main__':
     parser.add_argument('-m', '--mycollection', help='mycollection.json')
 
     group = parser.add_mutually_exclusive_group()
-    group.add_argument('--string', help='deck string')
+    group.add_argument('--deck', help='deck string')
     group.add_argument('--list', help='cards to add listed in a file')
     group.add_argument('--card', help='card name')
     parser.add_argument('--count', help='card count: 1 or 2')
@@ -144,8 +144,8 @@ if __name__ == '__main__':
     collection = HSCollection(args.collectible, args.mycollection)
 
     # Operations for constructing a deck with deck string from collection.
-    if args.string:
-        collection.load_deckstring(args.string)
+    if args.deck:
+        collection.load_deckstring(args.deck)
         sys.exit(0)
 
     # Operations for adding cards to mycollection.
