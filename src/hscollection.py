@@ -10,8 +10,8 @@ from hearthstone.enums import FormatType, Rarity
 class HSCollection:
     def __init__(self, collectible_path, mycollection_path):
         self.mycollection_path = mycollection_path
-        self.mycollection = None # = 'data/mycollection.json'
-        self.cards_collectible = None # = 'data/cards.collectible.json'
+        self.mycollection = None
+        self.cards_collectible = None
 
         self.load_collectible(collectible_path)
         self.load_mycollection(mycollection_path)
@@ -71,7 +71,6 @@ class HSCollection:
         with open(path) as f:
             for line in f:
                 line = line.strip()
-                # sys.stdout.write('process line: {}'.format(line))
                 if not line:
                     print('Skip empty line')
                     continue
@@ -91,6 +90,10 @@ class HSCollection:
                 return c['name']
         return None
 
+    def crafting_cost(self, card, count):
+        cost = Rarity[card['rarity']].crafting_costs[0]
+        return cost * count
+
     def load_deckstring(self, deckstring):
         print("\n### Checking cards in my collection ###\n")
         deck = Deck.from_deckstring(deckstring)
@@ -106,17 +109,13 @@ class HSCollection:
                     if card['count'] >= count:
                         print("OK")
                     else:
-                        missing = count - card['count']
-                        cost = Rarity[card['rarity']].crafting_costs[0]
-                        cost *= missing
+                        cost = self.crafting_cost(card, count - card['count'])
                         total_cost += cost
                         print("missing ({}): {} dust".format(missing, cost))
             if not found:
-                missing = 2
-                cost = Rarity[card['rarity']].crafting_costs[0]
-                cost *= missing
+                cost = self.crafting_cost(card, 2)
                 total_cost += cost
-                print("missing ({}): {} dust".format(missing, cost))
+                print("missing ({}): {} dust".format(2, cost))
         print("\n### Requires {} dust ###\n".format(total_cost))
 
 def usage():
