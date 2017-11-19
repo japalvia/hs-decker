@@ -149,7 +149,7 @@
 2   Arcanosmith
 1   Barnes
 2   Chillwind Yeti
-2   Cult Master
+2   Cult Master             # +1 golden
 1   Cyclopian Horror
 1   Daring Reporter
 2   Dragonling Mechanic
@@ -178,6 +178,7 @@
 1   Tanaris Hogchopper
 2   Ticking Abomination
 1   Twilight Drake
+1   Violet Teacher          # 1 golden
 2   Wicked Skeleton
 1   Worgen Greaser
 1   Abomination
