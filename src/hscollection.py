@@ -23,9 +23,15 @@ class HSCollection:
         with open(collectible) as f:
             self.cards_collectible = json.load(f)
 
-    def card2json(self, name):
+    def card_by_name(self, name):
         for c in self.cards_collectible:
             if c['name'] == name:
+                return c
+        return None
+
+    def card_by_Id(self, dbfId):
+        for c in self.cards_collectible:
+            if c['dbfId'] == dbfId:
                 return c
         return None
 
@@ -42,7 +48,7 @@ class HSCollection:
         if count != 1 and count != 2:
             self.error('Card count ({}) must be (1) or (2)'.format(count))
 
-        card = self.card2json(name)
+        card = self.card_by_name(name)
         if not card:
             self.error('Card not found: {}'.format(name))
         card['count'] = count
@@ -84,11 +90,6 @@ class HSCollection:
                 data = parts[0].split(' ', 1)
                 self.add_card(data[1].strip(), data[0])
 
-    def Id2name(self, dbfId):
-        for c in self.cards_collectible:
-            if c['dbfId'] == dbfId:
-                return c['name']
-        return None
 
     def crafting_cost(self, card, count):
         cost = Rarity[card['rarity']].crafting_costs[0]
@@ -101,22 +102,23 @@ class HSCollection:
         for (dbfId, count) in deck.cards:
             count = int(count)
             found = False
-            sys.stdout.write("{} ... ".format(self.Id2name(dbfId)))
             # TODO: is there a better lookup than iterating whole list?
             for card in self.mycollection:
                 if card['dbfId'] == dbfId:
                     found = True
                     if card['count'] >= count:
-                        print("OK")
+                        print("{} OK".format(card['name']))
                     else:
                         missing = count - card['count']
                         cost = self.crafting_cost(card, missing)
                         total_cost += cost
-                        print("missing ({}): {} dust".format(missing, cost))
+                        print("{} missing ({}): {} dust".format(card['name'], missing, cost))
+            card = None
             if not found:
-                cost = self.crafting_cost(card, 2)
+                card = self.card_by_Id(dbfId)
+                cost = self.crafting_cost(card, count)
                 total_cost += cost
-                print("missing ({}): {} dust".format(2, cost))
+                print("{} missing ({}): {} dust".format(card['name'], count, cost))
         print("\n### Requires {} dust ###\n".format(total_cost))
 
 def usage():
