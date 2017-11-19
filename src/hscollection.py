@@ -109,7 +109,8 @@ class HSCollection:
                     if card['count'] >= count:
                         print("OK")
                     else:
-                        cost = self.crafting_cost(card, count - card['count'])
+                        missing = count - card['count']
+                        cost = self.crafting_cost(card, missing)
                         total_cost += cost
                         print("missing ({}): {} dust".format(missing, cost))
             if not found:
