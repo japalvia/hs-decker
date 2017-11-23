@@ -281,3 +281,45 @@
 2   Dread Infernal      # +2 golden
 1   Abyssal Enforcer
 1   Bloodreaver Gul'dan
+
+# Shaman
+2   Ancestral Healing   # +2 golden
+2   Totemic Might
+2   Air Elemental       # +1 golden
+2   Dust Devil
+1   Earth Shock
+2   Forked Lightning
+2   Frost Shock
+2   Lightning Bolt
+2   Brrrloc
+1   Fire Plume Harbinger
+2   Flametongue Totem
+2   Ice Fishing
+2   Maelstrom Portal
+2   Primalfin Totem     # 1 golden
+2   Rockbiter Weapon
+2   Spirit Claws
+2   Windfury            # +2 golden
+2   Drakkari Defender   # +2 golden
+1   Hot Spring Guardian
+2   Ice Breaker         # +2 golden
+1   Lava Burst
+2   Lightning Storm
+1   Mana Tide Totem
+1   Spirit Echo
+1   Unbound Elemental
+2   Avalanche
+1   Call in the Finishers
+2   Hex
+1   Jade Lightning
+2   Tidal Surge
+2   Wicked Witchdoctor
+2   Windspeaker
+2   Bloodlust
+1   Doomhammer
+1   Volcano
+1   Voodoo Hexxer
+2   Fire Elemental
+1   Moorabi
+1   Kalimos, Primal Lord
+1   Snowfury Giant
