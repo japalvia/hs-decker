@@ -78,17 +78,13 @@ class HSCollection:
             for line in f:
                 line = line.strip()
                 if not line:
-                    print('Skip empty line')
                     continue
                 parts = line.split('#', 1)
                 if len(parts[0]) == 0: # line starts with comment
-                    print('comment line: {}'.format(parts[1]))
                     continue
-                if len(parts) > 1:
-                    print('data: [{}] comment: [{}]'.
-                          format(parts[0], parts[1]))
                 data = parts[0].split(' ', 1)
                 self.add_card(data[1].strip(), data[0])
+                # Ignoring comment in parts[1]
 
     def crafting_cost(self, card, count):
         cost = Rarity[card['rarity']].crafting_costs[0]
