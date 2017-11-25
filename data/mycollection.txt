@@ -1,11 +1,11 @@
 # Mage
-2   Arcane Missiles         # +2 golden
+2   Arcane Missiles
 2   Babbling Book
 2   Breath of Sindragosa
 1   Kabal Lackey
 2   Mana Wyrm
 2   Mirror Image
-2   Arcane Explosion        # +2 golden
+2   Arcane Explosion
 2   Arcanologist
 2   Flame Geyser
 2   Frostbolt
@@ -14,12 +14,12 @@
 1   Primordial Glyph
 2   Shimmering Tempest
 2   Sorcerer's Apprentice
-2   Arcane Intellect        # +2 golden
-2   Coldwraith              # +1 golden
+2   Arcane Intellect
+2   Coldwraith
 2   Counterspell
-2   Doomed Apprentice       # +1 golden
-2   Frost Nova              # +2 golden
-2   Frozen Clone            # +1 golden
+2   Doomed Apprentice
+2   Frost Nova
+2   Frozen Clone
 1   Ice Barrier
 1   Ice Block
 1   Kirin Tor Mage
@@ -83,7 +83,7 @@
 2   Kobold Geomancer
 2   Mad Bomber
 1   Mana Addict
-1   Mana Wraith             # 1 golden
+1   Mana Wraith
 1   Master Swordsmith
 2   Murloc Tidehunter
 2   Netherspite Historian
@@ -119,10 +119,10 @@
 2   Ironbeak Owl
 2   Ironforge Rifleman
 2   Ironfur Grizzly
-2   Jungle Panther          # 1 golden
+2   Jungle Panther
 2   Kabal Courier
 2   Magma Rager
-1   Mindbreaker             # 1 golden
+1   Mindbreaker
 1   Moroes
 2   Pantry Spider
 2   Primalfin Lookout
@@ -138,7 +138,7 @@
 1   Street Trickster
 2   Tar Creeper
 2   Tauren Warrior
-2   Thrallmar Farseer       # 1 golden
+2   Thrallmar Farseer
 2   Vicious Fledgling
 2   Violet Illusionist
 2   Vryghoul
@@ -149,7 +149,7 @@
 2   Arcanosmith
 1   Barnes
 2   Chillwind Yeti
-2   Cult Master             # +1 golden
+2   Cult Master
 1   Cyclopian Horror
 1   Daring Reporter
 2   Dragonling Mechanic
@@ -178,7 +178,7 @@
 1   Tanaris Hogchopper
 2   Ticking Abomination
 1   Twilight Drake
-1   Violet Teacher          # 1 golden
+1   Violet Teacher
 2   Wicked Skeleton
 1   Worgen Greaser
 1   Abomination
@@ -186,7 +186,7 @@
 2   Bloodworm
 2   Booty Bay Bodyguard
 2   Cobalt Scalebane
-1   Corpse Raiser           # 1 golden
+1   Corpse Raiser
 1   Corrupted Healbot
 2   Darkscale Healer
 2   Fen Creeper
@@ -222,12 +222,12 @@
 2   Reckless Rocketeer
 2   Sabretooth Stalker
 1   Skulking Geist
-2   Spellweaver             # +1 golden
+2   Spellweaver
 2   Windfury Harpy
 2   Bonemare
 2   Core Hound
 1   Grotesque Dragonhawk
-2   Ravenholdt Assassin     # +1 golden
+2   Ravenholdt Assassin
 1   Sated Threshadon
 2   Stormwind Champion
 1   The Curator
@@ -247,14 +247,14 @@
 1   Molten Giant
 
 # Warlock
-2   Sacrificial Pact        # +2 golden
+2   Sacrificial Pact
 1   Blood Imp
-2   Corruption              # +2 golden
+2   Corruption
 2   Flame Imp
 2   Malchezaar's Imp
 2   Mortal Coil
 2   Sanguine Reveler
-2   Soulfire                # +2 golden
+2   Soulfire
 2   Voidwalker
 2   Corrupting Mist
 2   Defile
@@ -278,14 +278,14 @@
 2   Kara Kazham!
 2   Tar Lurker
 1   Cruel Dinomancer
-2   Dread Infernal          # +2 golden
+2   Dread Infernal
 1   Abyssal Enforcer
 1   Bloodreaver Gul'dan
 
 # Shaman
-2   Ancestral Healing       # +2 golden
+2   Ancestral Healing
 2   Totemic Might
-2   Air Elemental           # +1 golden
+2   Air Elemental
 2   Dust Devil
 1   Earth Shock
 2   Forked Lightning
@@ -296,13 +296,13 @@
 2   Flametongue Totem
 2   Ice Fishing
 2   Maelstrom Portal
-2   Primalfin Totem         # 1 golden
+2   Primalfin Totem
 2   Rockbiter Weapon
 2   Spirit Claws
-2   Windfury                # +2 golden
-2   Drakkari Defender       # +2 golden
+2   Windfury
+2   Drakkari Defender
 1   Hot Spring Guardian
-2   Ice Breaker             # +2 golden
+2   Ice Breaker
 1   Lava Burst
 2   Lightning Storm
 1   Mana Tide Totem
@@ -334,12 +334,12 @@
 2   Savagery
 2   Mark of the Wild
 2   Tortollan Forager
-2   Wild Growth             # +1 golden
+2   Wild Growth
 2   Wrath
 2   Crypt Lord
 2   Elder Longneck
 2   Gnash
-2   Healing Touch           # +2 golden
+2   Healing Touch
 1   Mark of Nature
 2   Savage Roar
 2   Bite
@@ -351,7 +351,7 @@
 1   Strongshell Scavenger
 2   Swipe
 2   Druid of the Claw
-1   Force of Nature         # 1 golden
+1   Force of Nature
 2   Verdant Longneck
 2   Webweave
 1   Jade Behemoth
