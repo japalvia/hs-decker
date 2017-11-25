@@ -45,3 +45,9 @@ Cards are always added, delete mycollection.json when using single card list.
 	-c data/cards.collectible.json \
 	-m data/mycollection.json \
 	--card "Arcane Missiles" --count 2
+
+* Load a deck string to see what cards are missing:
+./src/hscollection.py \
+    -c data/cards.collectible.json \
+    -m data/mycollection.json \
+    --deck AAECAZICCMUEogmoqwKfsAKhtwLguwLCzgKZ0wILQF/+AcQG5Ai+rgLLvAL5wALJxwKgzQKHzgIA
