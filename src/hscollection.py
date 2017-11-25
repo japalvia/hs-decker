@@ -5,7 +5,7 @@ import json
 import sys
 
 from hearthstone.deckstrings import Deck
-from hearthstone.enums import FormatType, Rarity
+from hearthstone.enums import FormatType, Rarity, CardSet
 
 class HSCollection:
     def __init__(self, collectible_path, mycollection_path):
@@ -90,9 +90,21 @@ class HSCollection:
         cost = Rarity[card['rarity']].crafting_costs[0]
         return cost * count
 
-    def readable_set(self, card):
-        # TODO: dictionary or other mapping from python-hearthstone CardSet to str
-        pass
+    '''Translate CardSet enums to human readable set names.
+       Contains only Standard sets.
+       Does not translate _RESERVE enums since I don't know what they contain
+       and there are no cards in those sets (in cards.collectible.json).'''
+    def readable_card_set(self, card_set):
+        switcher = {
+                CardSet.CORE.name : 'Basic',
+                CardSet.EXPERT1.name : 'Classic',
+                CardSet.OG.name : 'Whispers of the Old Gods',
+                CardSet.KARA.name : 'One Night in Karazhan',
+                CardSet.GANGS.name : 'Mean Streets of Gadgetzan',
+                CardSet.UNGORO.name : 'Journey to Un\'Goro',
+                CardSet.ICECROWN.name : 'Knights of the Frozen Throne'
+        }
+        return switcher.get(card_set, 'Not found:' + card_set)
 
     def load_deckstring(self, deckstring):
         print("\n### Checking cards in my collection ###\n")
@@ -113,14 +125,15 @@ class HSCollection:
                         cost = self.crafting_cost(card, missing)
                         total_cost += cost
                         print("missing ({}): {} dust ({})".
-                              format(missing, cost, card['set']))
+                              format(missing, cost,
+                                     self.readable_card_set(card['set'])))
             card = None
             if not found:
                 card = self.collectible_by_Id(dbfId)
                 cost = self.crafting_cost(card, count)
                 total_cost += cost
                 print("missing ({}): {} dust ({})".
-                      format(count, cost, card['set']))
+                      format(count, cost, self.readable_card_set(card['set'])))
         print("\n### Requires {} dust ###\n".format(total_cost))
 
 def usage():
