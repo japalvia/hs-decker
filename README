@@ -20,6 +20,12 @@ Collect my personal card collection as JSON data: find each card name and ID in
 cards.collectible.json. Be careful when identifying the cards, there are many
 with similar name or other variations. Look for the cost and text.
 
+Prerequisites
+-------------
+
+* Python-hearthstone module installed:
+	https://github.com/HearthSim/python-hearthstone
+
 Usage
 -----
 
