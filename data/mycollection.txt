@@ -473,3 +473,83 @@
 2   Free From Amber
 1   Shadowreaper Anduin
 2   Mind Control
+
+# Rogue
+2   Backstab
+2   Shadowstep
+2   Cold Blood
+2   Deadly Poison
+2   Hallucination
+2   Sinister Strike
+2   Swashburglar
+2   Betrayal
+2   Defias Ringleader
+2   Eviscerate
+1   Jade Shuriken
+2   Leeching Poison
+2   Razorpetal Lasher
+2   Razorpetal Volley
+2   Roll the Bones
+2   Sap
+2   Shiv
+2   Deadly Fork
+2   Fan of Knives
+1   Mimic Pod
+1   Perdition's Blade
+2   Plague Scientist
+1   Shadow Rager
+2   Shadowblade
+1   SI:7 Agent
+2   Blade Flurry
+1   Master of Disguise
+2   Obsidian Shard
+2   Runeforge Haunter
+2   Assassinate
+2   Assassin's Blade
+2   Bone Baron
+2   Ethereal Peddler
+1   Kidnapper
+1   Spectral Pillager
+2   Vanish
+2   Sprint
+
+# Warrior
+2   Inner Rage
+2   Animated Berserker
+2   Charge
+2   Iron Hide
+1   Molten Blade
+2   N'Zoth's First Mate
+1   Shield Slam
+2   Upgrade!
+2   Whirlwind
+2   Battle Rage
+2   Cleave
+1   Commanding Shout
+1   Cornered Sentry
+2   Cruel Taskmaster
+2   Execute
+2   Forge of Souls
+2   Heroic Strike
+2   Rampage
+2   Slam
+2   Bloodsail Cultist
+2   Fiery War Axe
+2   Frothing Berserker
+2   Grimestreet Pawnbroker
+1   Mountainfire Armor
+2   Protect the King!
+2   Shield Block
+1   Val'kyr Soulclaimer
+2   Warsong Commander
+2   Arathi Weaponsmith
+2   Blood Razor
+2   Kor'kron Elite
+2   Mortal Strike
+2   Arcanite Reaper
+1   Death Revenant
+1   Direhorn Hatchling
+2   Fool's Bane
+2   Ironforge Portal
+2   Ornery Direhorn
+2   Tar Lord
