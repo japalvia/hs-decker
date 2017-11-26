@@ -438,3 +438,38 @@
 2   Guardian of Kings
 2   Vinecleaver
 
+# Priest
+2   Circle of Healing
+2   Silence
+2   Binding Heal
+2   Crystalline Oracle
+2   Holy Smite
+2   Inner Fire
+2   Mind Vision
+2   Northshire Cleric
+2   Power Word: Shield
+2   Divine Spirit
+2   Mind Blast
+2   Purify
+2   Radiant Elemental
+2   Shadow Ascendant
+2   Shadow Word: Pain
+2   Spirit Lash
+2   Acolyte of Agony
+2   Kabal Talonpriest
+2   Shadow Word: Death
+1   Thoughtsteal
+2   Auchenai Soulpriest
+2   Eternal Servitude
+2   Lightspawn
+2   Priest of the Feast
+1   Shadow Madness
+2   Tortollan Shellraiser
+2   Devour Mind
+2   Holy Nova
+2   Onyx Bishop
+1   Cabal Shadow Priest
+1   Embrace Darkness
+2   Free From Amber
+1   Shadowreaper Anduin
+2   Mind Control
