@@ -180,7 +180,7 @@
 1   Twilight Drake
 1   Violet Teacher
 2   Wicked Skeleton
-1   Worgen Greaser
+2   Worgen Greaser
 1   Abomination
 2   Avian Watcher
 2   Bloodworm
