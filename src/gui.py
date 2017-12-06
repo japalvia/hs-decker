@@ -20,7 +20,10 @@ class CardGrid(QWidget):
         super().__init__()
         self.grid = QGridLayout(self)
 
-    def addCard(self, card, row, col):
+    def addCard(self, card_tuple, row, col):
+        card = card_tuple[0]
+        found = card_tuple[1]
+        missing = card_tuple[2]
         image_dir = '/home/palvja/repos/hearthstone-card-images/rel'
         path = image_dir + '/' + str(card['dbfId']) + '.png'
         pixmap = QPixmap(path)
@@ -31,7 +34,10 @@ class CardGrid(QWidget):
         cardWidget = CardWidget()
         cardWidget.layout().addWidget(image)
 
-        countLabel = QLabel(str(card['count']))
+        count_str = '{}'.format(str(found+missing))
+        if missing:
+            count_str = '{} ({})'.format(str(found+missing), missing)
+        countLabel = QLabel(count_str)
         countLabel.setAlignment(Qt.AlignHCenter)
         countLabel.setStyleSheet("font-family: URW Bookman; font-style: Light;"
                                  "font-size: 50px; color: black");
@@ -66,8 +72,8 @@ class HSGui(QWidget):
         self.decklabel.setText('Copy-paste deck string and press Enter!')
 
     def load_deck(self):
-        found, missing = self.collection.load_deckstring(self.textedit.text())
-        if not found or not missing:
+        cards_tuple = self.collection.load_deckstring(self.textedit.text())
+        if not cards_tuple:
             self.decklabel.setText('Invalid deck string, try again')
             return
         self.reset_decklabel()
@@ -75,11 +81,11 @@ class HSGui(QWidget):
         cardGrid = CardGrid()
 
         col, row = 0, 0 # we start filling cards from grid pos (0,1)
-        for i, card in enumerate(found):
+        for i, card_tuple in enumerate(cards_tuple):
             col = i % 5
             if col == 0:
                 row += 1
-            cardGrid.addCard(card, row, col)
+            cardGrid.addCard(card_tuple, row, col)
 
         scrollArea = QScrollArea()
         scrollArea.setBackgroundRole(QPalette.Shadow)

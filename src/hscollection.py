@@ -109,14 +109,14 @@ class HSCollection:
 
     def load_deckstring(self, deckstring):
         print("\n### Checking cards in my collection ###\n")
-        found_cards = []
-        missing_cards = []
+        # Return a list of tuplets (card, found, missing)
+        cards = []
 
         try:
             deck = Deck.from_deckstring(deckstring)
         except binascii.Error:
             print('Deck string is invalid base64 string: {}'.format(deckstring))
-            return None, None
+            return None
 
         total_cost = 0
         for (dbfId, count) in deck.cards:
@@ -129,10 +129,10 @@ class HSCollection:
                     found = True
                     if card['count'] >= count:
                         print("OK")
-                        found_cards.append(card)
+                        cards.append((card, count, 0))
                     else:
-                        missing_cards.append(card)
                         missing = count - card['count']
+                        cards.append((card, card['count'], missing))
                         cost = self.crafting_cost(card, missing)
                         total_cost += cost
                         print("missing ({}): {} dust ({})".
@@ -141,14 +141,13 @@ class HSCollection:
             card = None
             if not found:
                 card = self.collectible_by_Id(dbfId)
-                card['count'] = count
-                missing_cards.append(card)
+                cards.append((card, 0, count))
                 cost = self.crafting_cost(card, count)
                 total_cost += cost
                 print("missing ({}): {} dust ({})".
                       format(count, cost, self.readable_card_set(card['set'])))
         print("\n### Requires {} dust ###\n".format(total_cost))
-        return found_cards, missing_cards
+        return cards
 
 def usage():
     print('Usage: {} <card name> <count>'.format(sys.argv[0]), file=sys.stderr)
