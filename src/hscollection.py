@@ -1,6 +1,7 @@
 #!/bin/env python3
 
 import argparse
+import binascii
 import json
 import sys
 
@@ -108,7 +109,15 @@ class HSCollection:
 
     def load_deckstring(self, deckstring):
         print("\n### Checking cards in my collection ###\n")
-        deck = Deck.from_deckstring(deckstring)
+        found_cards = []
+        missing_cards = []
+
+        try:
+            deck = Deck.from_deckstring(deckstring)
+        except binascii.Error:
+            print('Deck string is invalid base64 string: {}'.format(deckstring))
+            return None, None
+
         total_cost = 0
         for (dbfId, count) in deck.cards:
             count = int(count)
@@ -120,7 +129,9 @@ class HSCollection:
                     found = True
                     if card['count'] >= count:
                         print("OK")
+                        found_cards.append(card)
                     else:
+                        missing_cards.append(card)
                         missing = count - card['count']
                         cost = self.crafting_cost(card, missing)
                         total_cost += cost
@@ -130,11 +141,14 @@ class HSCollection:
             card = None
             if not found:
                 card = self.collectible_by_Id(dbfId)
+                card['count'] = count
+                missing_cards.append(card)
                 cost = self.crafting_cost(card, count)
                 total_cost += cost
                 print("missing ({}): {} dust ({})".
                       format(count, cost, self.readable_card_set(card['set'])))
         print("\n### Requires {} dust ###\n".format(total_cost))
+        return found_cards, missing_cards
 
 def usage():
     print('Usage: {} <card name> <count>'.format(sys.argv[0]), file=sys.stderr)
