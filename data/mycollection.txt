@@ -1,4 +1,6 @@
 # Mage
+2   Shifting Scroll
+2   Arcane Artificer
 2   Arcane Missiles
 2   Babbling Book
 2   Breath of Sindragosa
@@ -10,14 +12,17 @@
 2   Flame Geyser
 2   Frostbolt
 2   Ice Walker
+1   Lesser Ruby Spellstone
 2   Medivh's Valet
 1   Primordial Glyph
+2   Raven Familiar
 2   Shimmering Tempest
 2   Sorcerer's Apprentice
 2   Arcane Intellect
 2   Coldwraith
 2   Counterspell
 2   Doomed Apprentice
+2   Explosive Runes
 2   Frost Nova
 2   Frozen Clone
 1   Ice Barrier
@@ -29,8 +34,11 @@
 1   Ethereal Arcanist
 2   Fireball
 2   Ghastly Conjurer
+2   Leyline Manipulator
 2   Polymorph
 2   Water Elemental
+2   Deck of Wonders
+1   Dragon's Fury
 1   Archmage Antonidas
 2   Firelands Portal
 2   Flamestrike
@@ -327,10 +335,12 @@
 # Druid
 2   Innervate
 2   Moonfire
+2   Barkskin
 2   Claw
 2   Earthen Scales
 2   Enchanted Raven
 2   Naturalize
+1   Lesser Jasper Spellstone
 2   Savagery
 2   Mark of the Wild
 2   Tortollan Forager
@@ -339,13 +349,17 @@
 2   Crypt Lord
 2   Elder Longneck
 2   Gnash
+1   Greedy Sprite
 2   Healing Touch
 1   Mark of Nature
 2   Savage Roar
 2   Bite
+1   Branching Paths
 2   Evolving Spores
+2   Ironwood Golem
 1   Klaxxi Amber-Weaver
 1   Mire Keeper
+2   Oaken Summons
 1   Shellshifter
 2   Soul of the Forest
 1   Strongshell Scavenger
@@ -366,6 +380,7 @@
 # Hunter
 2   Alleycat
 2   Arcane Shot
+2   Candleshot
 1   Fiery Bat
 2   Hunter's Mark
 2   Jeweled Macaw
@@ -385,9 +400,11 @@
 2   Scavenging Hyena
 2   Snipe
 2   Venomstrike Trap
+2   Wandering Monster
 2   Animal Companion
 2   Bearshark
 1   Carrion Grub
+1   Cave Hydra
 2   Cloaked Huntress
 2   Deadly Shot
 1   Eaglehorn Bow
@@ -397,14 +414,20 @@
 2   Unleash the Hounds
 1   Dispatch Kodo
 2   Exploding Bloatbat
+2   Flanking Strike
 2   Houndmaster
 2   Multi-Shot
 2   Corpse Widow
 1   Explosive Shot
+2   Lesser Emerald Spellstone
 2   Starving Buzzard
 2   Tundra Rhino
 1   Savannah Highmane
+2   Seeping Oozeling
+1   To My Side!
+1   Crushing Walls
 1   Gladiator's Longbow
+1   Rhok'delar
 
 # Paladin
 2   Adaptation
@@ -414,16 +437,22 @@
 2   Humility
 2   Light's Justice
 2   Lost in the Jungle
-1   Noble Sacrifice
+2   Noble Sacrifice
 1   Redemption
 2   Righteous Protector
 2   Argent Protector
 2   Dark Conviction
 2   Desperate Stand
+2   Drygulch Jailor
 2   Holy Light
 2   Hydrologist
+1   Lesser Pearl Spellstone
+2   Potion of Heroism
+2   Aldor Peacekeeper
+2   Benevolent Djinn
 2   Howling Commander
 2   Nightbane Templar
+2   Unidentified Maul
 1   Arrogant Crusader
 2   Blessing of Kings
 2   Chillblade Champion
@@ -432,7 +461,9 @@
 1   Light's Sorrow
 2   Silvermoon Portal
 2   Truesilver Champion
+1   Level Up!
 2   Blackguard
+2   Crystal Lion
 2   Ivory Knight
 1   Spikeridged Steed
 2   Guardian of Kings
@@ -448,6 +479,7 @@
 2   Mind Vision
 2   Northshire Cleric
 2   Power Word: Shield
+2   Psionic Probe
 2   Divine Spirit
 2   Mind Blast
 2   Purify
@@ -456,10 +488,15 @@
 2   Shadow Word: Pain
 2   Spirit Lash
 2   Acolyte of Agony
+2   Gilded Gargoyle
 2   Kabal Talonpriest
 2   Shadow Word: Death
 1   Thoughtsteal
+1   Twilight Acolyte
+2   Twilight's Call
+2   Unidentified Elixir
 2   Auchenai Soulpriest
+2   Duskbreaker
 2   Eternal Servitude
 2   Lightspawn
 2   Priest of the Feast
@@ -468,8 +505,9 @@
 2   Devour Mind
 2   Holy Nova
 2   Onyx Bishop
-1   Cabal Shadow Priest
+2   Cabal Shadow Priest
 1   Embrace Darkness
+1   Lesser Diamond Spellstone
 2   Free From Amber
 1   Shadowreaper Anduin
 2   Mind Control
