@@ -108,7 +108,7 @@ class HSCollection:
         return switcher.get(card_set, 'Not found:' + card_set)
 
     def load_deckstring(self, deckstring):
-        print("\n### Checking cards in my collection ###\n")
+        #print("\n### Checking cards in my collection ###\n")
         # Return a list of tuplets (card, found, missing)
         cards = []
 
@@ -122,32 +122,41 @@ class HSCollection:
         for (dbfId, count) in deck.cards:
             count = int(count)
             found = False
-            sys.stdout.write(self.collectible_by_Id(dbfId)['name'].ljust(25))
-            # TODO: is there a better lookup than iterating whole list?
             for card in self.mycollection:
                 if card['dbfId'] == dbfId:
                     found = True
                     if card['count'] >= count:
-                        print("OK")
                         cards.append((card, count, 0))
                     else:
                         missing = count - card['count']
                         cards.append((card, card['count'], missing))
-                        cost = self.crafting_cost(card, missing)
-                        total_cost += cost
-                        print("missing ({}): {} dust ({})".
-                              format(missing, cost,
-                                     self.readable_card_set(card['set'])))
             card = None
             if not found:
                 card = self.collectible_by_Id(dbfId)
                 cards.append((card, 0, count))
-                cost = self.crafting_cost(card, count)
+
+        return cards
+
+    def show_deck(self, deckstring):
+        cards_tuple = self.load_deckstring(deckstring)
+        total_cost = 0
+        print("\n### Checking cards in my collection ###\n")
+        for ct in cards_tuple:
+            card = ct[0]
+            found = ct[1]
+            missing = ct[2]
+            sys.stdout.write('{} {}'.format(found + missing,
+                             card['name'].ljust(25, '.')))
+            if missing:
+                cost = self.crafting_cost(card, missing)
                 total_cost += cost
                 print("missing ({}): {} dust ({})".
-                      format(count, cost, self.readable_card_set(card['set'])))
+                      format(missing, cost,
+                             self.readable_card_set(card['set'])))
+            else:
+                print("OK")
+
         print("\n### Requires {} dust ###\n".format(total_cost))
-        return cards
 
 def usage():
     print('Usage: {} <card name> <count>'.format(sys.argv[0]), file=sys.stderr)
@@ -173,7 +182,7 @@ if __name__ == '__main__':
 
     # Operations for constructing a deck with deck string from collection.
     if args.deck:
-        collection.load_deckstring(args.deck)
+        collection.show_deck(args.deck)
         sys.exit(0)
 
     # Operations for adding cards to mycollection.
