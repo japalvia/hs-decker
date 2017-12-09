@@ -17,6 +17,7 @@ class CardWidget(QWidget):
 
 class CardGrid(QWidget):
     def __init__(self):
+        print("CardGrid constructor, new grid layout")
         super().__init__()
         self.grid = QGridLayout(self)
 
@@ -37,7 +38,7 @@ class CardGrid(QWidget):
         count_str = '{}'.format(str(found+missing))
         if missing:
             count_str = '{} ({})'.format(str(found+missing), missing)
-        countLabel = QLabel(count_str)
+        countLabel = QLabel(count_str, self)
         countLabel.setAlignment(Qt.AlignHCenter)
         countLabel.setStyleSheet("font-family: URW Bookman; font-style: Light;"
                                  "font-size: 50px; color: black");
@@ -53,15 +54,17 @@ class HSGui(QWidget):
                                           'data/mycollection.json')
 
     def init_ui(self):
+        self.cardGrid = None
+        self.scrollArea = None
 
         vbox = QVBoxLayout(self)
         self.setLayout(vbox)
 
-        self.decklabel = QLabel()
+        self.decklabel = QLabel(self)
         vbox.addWidget(self.decklabel)
         self.reset_decklabel()
 
-        self.textedit = QLineEdit()
+        self.textedit = QLineEdit(self)
         vbox.addWidget(self.textedit)
         self.textedit.returnPressed.connect(self.load_deck)
 
@@ -78,20 +81,35 @@ class HSGui(QWidget):
             return
         self.reset_decklabel()
 
-        cardGrid = CardGrid()
+        if self.cardGrid:
+            print("remove cardGrid, hide, and drop reference")
+            self.layout().removeWidget(self.cardGrid)
+            self.cardGrid.hide()
+            self.cardGrid = None
+        self.cardGrid = CardGrid()
+        #print("frameSize: {} maximumSize: {}".format(cardGrid.frameSize(),
+        #    cardGrid.maximumSize()))
 
         col, row = 0, 0 # we start filling cards from grid pos (0,1)
         for i, card_tuple in enumerate(cards_tuple):
             col = i % 5
             if col == 0:
                 row += 1
-            cardGrid.addCard(card_tuple, row, col)
+            self.cardGrid.addCard(card_tuple, row, col)
 
-        scrollArea = QScrollArea()
-        scrollArea.setBackgroundRole(QPalette.Shadow)
-        scrollArea.setWidget(cardGrid)
-        vbox = self.layout()
-        vbox.addWidget(scrollArea)
+        if self.scrollArea:
+            print("remove from root layout scrollArea")
+            self.layout().removeWidget(self.scrollArea)
+            self.scrollArea = None
+        print("create scrollArea")
+        self.scrollArea = QScrollArea(self)
+        self.scrollArea.setBackgroundRole(QPalette.Shadow)
+        print("scrollArea: setWidget(cardGrid)")
+        self.scrollArea.setWidget(self.cardGrid)
+        print("root layout: add scrollArea")
+        self.layout().addWidget(self.scrollArea)
+
+        print("*********")
 
     def keyPressEvent(self, e):
         if e.key() == Qt.Key_Escape:
