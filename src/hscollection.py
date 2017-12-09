@@ -147,7 +147,7 @@ class HSCollection:
             found = ct[1]
             missing = ct[2]
             sys.stdout.write('{} {}'.format(found + missing,
-                             card['name'].ljust(25, '.')))
+                             card['name'].ljust(27, '.')))
             if missing:
                 cost = self.crafting_cost(card, missing)
                 total_cost += cost
