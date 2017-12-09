@@ -103,7 +103,8 @@ class HSCollection:
                 CardSet.KARA.name : 'One Night in Karazhan',
                 CardSet.GANGS.name : 'Mean Streets of Gadgetzan',
                 CardSet.UNGORO.name : 'Journey to Un\'Goro',
-                CardSet.ICECROWN.name : 'Knights of the Frozen Throne'
+                CardSet.ICECROWN.name : 'Knights of the Frozen Throne',
+                CardSet.LOOTAPALOOZA.name : 'Kobolds and Catacombs',
         }
         return switcher.get(card_set, 'Not found:' + card_set)
 
