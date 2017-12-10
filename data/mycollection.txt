@@ -469,6 +469,7 @@
 2   Ravasaur Runt
 2   River Crocolisk
 1   Rockpool Hunter
+1   Scorp-o-matic
 2   Stubborn Gastropod
 2   Tainted Zealot
 2   Tuskarr Fisherman
