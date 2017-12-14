@@ -152,6 +152,7 @@
 2   Lost in the Jungle
 2   Noble Sacrifice
 1   Redemption
+1   Repentance
 2   Righteous Protector
 2   Argent Protector
 2   Dark Conviction
@@ -212,6 +213,7 @@
 2   Duskbreaker
 2   Eternal Servitude
 2   Lightspawn
+1   Mass Dispel
 2   Priest of the Feast
 1   Shadow Madness
 2   Tortollan Shellraiser
@@ -220,6 +222,7 @@
 2   Onyx Bishop
 2   Cabal Shadow Priest
 1   Embrace Darkness
+1   Temple Enforcer
 1   Lesser Diamond Spellstone
 2   Free From Amber
 1   Shadowreaper Anduin
@@ -490,7 +493,7 @@
 2   Flesheating Ghoul
 2   Fungal Enchanter
 2   Grimestreet Smuggler
-1   Happy Ghoul
+2   Happy Ghoul
 1   Harvest Golem
 1   Hired Gun
 1   Humongous Razorleaf
