@@ -195,6 +195,7 @@
 2   Power Word: Shield
 2   Psionic Probe
 2   Divine Spirit
+1   Lightwell
 2   Mind Blast
 2   Purify
 2   Radiant Elemental
