@@ -259,7 +259,8 @@
 2   Shadowblade
 1   SI:7 Agent
 2   Blade Flurry
-1   Elven Minstrel
+2   Elven Minstrel
+1   Fal'dorei Strider
 1   Master of Disguise
 2   Obsidian Shard
 2   Runeforge Haunter
@@ -311,7 +312,7 @@
 2   Wicked Witchdoctor
 2   Windspeaker
 2   Bloodlust
-1   Doomhammer
+2   Doomhammer
 1   Volcano
 1   Voodoo Hexxer
 2   Fire Elemental
@@ -423,7 +424,7 @@
 2   Elven Archer
 1   Emerald Hive Queen
 1   Emerald Reaver
-1   Feral Gibberer
+2   Feral Gibberer
 2   Fire Fly
 2   Glacial Shard
 2   Goldshire Footman
@@ -461,6 +462,7 @@
 2   Golakka Crawler
 1   Knife Juggler
 2   Kobold Geomancer
+1   Lorewalker Cho
 2   Mad Bomber
 1   Mana Addict
 1   Mana Wraith
@@ -473,7 +475,7 @@
 2   Ravasaur Runt
 2   River Crocolisk
 1   Rockpool Hunter
-1   Scorp-o-matic
+2   Scorp-o-matic
 2   Stubborn Gastropod
 2   Tainted Zealot
 2   Tuskarr Fisherman
