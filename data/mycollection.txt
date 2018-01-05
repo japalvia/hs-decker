@@ -488,6 +488,7 @@
 2   Deathspeaker
 2   Demolisher
 1   Devilsaur Egg
+2   Disciple of C'Thun
 2   Dragonslayer
 1   Drakkari Enchanter
 2   Earthen Ring Farseer
