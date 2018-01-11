@@ -278,7 +278,7 @@
 2   Totemic Might
 2   Air Elemental
 2   Dust Devil
-1   Earth Shock
+2   Earth Shock
 2   Forked Lightning
 2   Frost Shock
 2   Lightning Bolt
@@ -547,6 +547,7 @@
 2   Cursed Disciple
 1   Cyclopian Horror
 1   Daring Reporter
+2   Dark Iron Dwarf
 2   Dragonling Mechanic
 2   Dread Corsair
 2   Ebon Dragonsmith
@@ -578,7 +579,7 @@
 1   Tanaris Hogchopper
 2   Ticking Abomination
 1   Twilight Drake
-1   Violet Teacher
+2   Violet Teacher
 2   Wicked Skeleton
 2   Worgen Greaser
 1   Abomination
