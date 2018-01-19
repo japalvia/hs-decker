@@ -41,6 +41,7 @@
 2   Starfire
 1   Giant Anaconda
 1   Malfurion the Pestilent
+1   Grizzled Guardian
 2   Ironbark Protector
 
 # Hunter
@@ -225,6 +226,7 @@
 1   Embrace Darkness
 1   Temple Enforcer
 1   Lesser Diamond Spellstone
+1   Prophet Velen
 2   Free From Amber
 1   Shadowreaper Anduin
 2   Mind Control
@@ -340,6 +342,7 @@
 2   Drain Soul
 2   Succubus
 2   Vulgar Homunculus
+1   Chittering Tunneler
 2   Drain Life
 2   Howlfiend
 1   Sense Demons
@@ -430,6 +433,7 @@
 2   Goldshire Footman
 1   Gravelsnout Knight
 2   Grimscale Oracle
+1   Hungry Crab
 1   Leper Gnome
 1   Lightwarden
 2   Murloc Raider
@@ -460,7 +464,7 @@
 2   Fallen Sun Cleric
 2   Frostwolf Grunt
 2   Golakka Crawler
-1   Knife Juggler
+2   Knife Juggler
 2   Kobold Geomancer
 1   Lorewalker Cho
 2   Mad Bomber
@@ -578,6 +582,7 @@
 2   Stormwind Knight
 1   Tanaris Hogchopper
 2   Ticking Abomination
+1   Tol'vir Stoneshaper
 1   Twilight Drake
 2   Violet Teacher
 2   Wicked Skeleton
