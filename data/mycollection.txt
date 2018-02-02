@@ -470,7 +470,7 @@
 2   Mad Bomber
 1   Mana Addict
 1   Mana Wraith
-1   Master Swordsmith
+2   Master Swordsmith
 2   Murloc Tidehunter
 2   Netherspite Historian
 2   Novice Engineer
@@ -520,7 +520,7 @@
 1   Moroes
 2   Pantry Spider
 2   Primalfin Lookout
-1   Questing Adventurer
+2   Questing Adventurer
 1   Raging Worgen
 2   Raid Leader
 2   Razorfen Hunter
