@@ -140,6 +140,9 @@ class HSCollection:
 
     def show_deck(self, deckstring):
         cards_tuple = self.load_deckstring(deckstring)
+        if not cards_tuple:
+            return
+
         total_cost = 0
         print("\n### Checking cards in my collection ###\n")
         for ct in cards_tuple:
