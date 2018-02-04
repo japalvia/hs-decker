@@ -89,7 +89,7 @@
 2   Lesser Emerald Spellstone
 2   Starving Buzzard
 2   Tundra Rhino
-1   Savannah Highmane
+2   Savannah Highmane
 2   Seeping Oozeling
 1   To My Side!
 1   Crushing Walls
@@ -491,7 +491,7 @@
 2   Dalaran Mage
 2   Deathspeaker
 2   Demolisher
-1   Devilsaur Egg
+2   Devilsaur Egg
 2   Disciple of C'Thun
 2   Dragonslayer
 1   Drakkari Enchanter
