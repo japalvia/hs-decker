@@ -152,7 +152,7 @@
 2   Light's Justice
 2   Lost in the Jungle
 2   Noble Sacrifice
-1   Redemption
+2   Redemption
 1   Repentance
 2   Righteous Protector
 2   Argent Protector
@@ -270,7 +270,7 @@
 2   Assassin's Blade
 2   Bone Baron
 2   Ethereal Peddler
-1   Kidnapper
+2   Kidnapper
 1   Spectral Pillager
 2   Vanish
 2   Sprint
@@ -552,6 +552,7 @@
 1   Cyclopian Horror
 1   Daring Reporter
 2   Dark Iron Dwarf
+1   Defender of Argus
 2   Dragonling Mechanic
 2   Dread Corsair
 2   Ebon Dragonsmith
@@ -577,7 +578,7 @@
 2   Shroom Brewer
 2   Silvermoon Guardian
 2   Sneaky Devil
-1   Spellbreaker
+2   Spellbreaker
 2   Stegodon
 2   Stormwind Knight
 1   Tanaris Hogchopper
