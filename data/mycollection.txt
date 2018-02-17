@@ -9,6 +9,7 @@
 1   Lesser Jasper Spellstone
 2   Savagery
 2   Mark of the Wild
+1   Power of the Wild
 2   Tortollan Forager
 2   Wild Growth
 2   Wrath
@@ -125,7 +126,7 @@
 2   Frozen Clone
 1   Ice Barrier
 1   Ice Block
-1   Kirin Tor Mage
+2   Kirin Tor Mage
 1   Mana Bind
 2   Mirror Entity
 1   Cone of Cold
@@ -345,7 +346,7 @@
 1   Chittering Tunneler
 2   Drain Life
 2   Howlfiend
-1   Sense Demons
+2   Sense Demons
 2   Shadow Bolt
 2   Silverware Golem
 2   Treachery
