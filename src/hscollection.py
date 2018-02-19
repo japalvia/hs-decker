@@ -108,9 +108,8 @@ class HSCollection:
         }
         return switcher.get(card_set, 'Not found:' + card_set)
 
+    '''Return a list of tuplets (card, found, missing)'''
     def load_deckstring(self, deckstring):
-        #print("\n### Checking cards in my collection ###\n")
-        # Return a list of tuplets (card, found, missing)
         cards = []
 
         try:
@@ -162,12 +161,20 @@ class HSCollection:
 
         print("\n### Requires {} dust ###\n".format(total_cost))
 
+    def add_card_set(self, setname):
+        print('NOT IMPLEMENTED')
+
+
 def usage():
-    print('Usage: {} <card name> <count>'.format(sys.argv[0]), file=sys.stderr)
+    print('select one operation:\n'
+          '\t--deck (load a deck string)\n'
+          '\t--list (add cards from a file list\n'
+          '\t--set (add all cards in expansion\n'
+          '\t--card --count (add this card count times)', file=sys.stderr)
 
 def bad_usage(msg):
     usage()
-    sys.exit(msg)
+    sys.exit('ERROR: {}'.format(msg))
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser('Manage Hearthstone cards collection')
@@ -177,7 +184,8 @@ if __name__ == '__main__':
     group = parser.add_mutually_exclusive_group()
     group.add_argument('--deck', help='deck string')
     group.add_argument('--list', help='cards to add listed in a file')
-    group.add_argument('--card', help='card name')
+    group.add_argument('--set', help='add all cards in expansion set')
+    group.add_argument('--card', help='add card by name')
     parser.add_argument('--count', help='card count: 1 or 2')
 
     args = parser.parse_args()
@@ -194,9 +202,11 @@ if __name__ == '__main__':
         bad_usage('--card and --count must be used together')
     if args.card:
         collection.add_card(args.card, args.count)
-    elif args.list:
+    if args.list:
         collection.add_from_file(args.list)
+    elif args.set:
+        collection.add_card_set(args.set)
     else:
-        bad_usage('--list or --card is required')
+        bad_usage('Operation missing')
     collection.save()
 
