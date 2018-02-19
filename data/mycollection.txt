@@ -208,7 +208,7 @@
 2   Gilded Gargoyle
 2   Kabal Talonpriest
 2   Shadow Word: Death
-1   Thoughtsteal
+2   Thoughtsteal
 1   Twilight Acolyte
 2   Twilight's Call
 2   Unidentified Elixir
@@ -225,7 +225,7 @@
 2   Onyx Bishop
 2   Cabal Shadow Priest
 1   Embrace Darkness
-1   Temple Enforcer
+2   Temple Enforcer
 1   Lesser Diamond Spellstone
 1   Prophet Velen
 2   Free From Amber
@@ -438,7 +438,7 @@
 1   Leper Gnome
 1   Lightwarden
 2   Murloc Raider
-1   Murloc Tidecaller
+2   Murloc Tidecaller
 2   Runic Egg
 2   Secretkeeper
 2   Shieldbearer
