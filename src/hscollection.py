@@ -95,7 +95,8 @@ class HSCollection:
        Contains only Standard sets.
        Does not translate _RESERVE enums since I don't know what they contain
        and there are no cards in those sets (in cards.collectible.json).'''
-    def readable_card_set(self, card_set):
+    @staticmethod
+    def readable_card_set(card_set):
         switcher = {
                 CardSet.CORE.name : 'Basic',
                 CardSet.EXPERT1.name : 'Classic',
@@ -161,16 +162,37 @@ class HSCollection:
 
         print("\n### Requires {} dust ###\n".format(total_cost))
 
-    def add_card_set(self, setname):
-        print('NOT IMPLEMENTED')
+    def add_card_set(self, setnumber):
+        e = None
+        try:
+            e = CardSet(int(setnumber))
+        except ValueError:
+            bad_usage('Invalid set number: {}'.format(setnumber))
 
+        n = e.name
+        for c in self.cards_collectible:
+            if c['set'] == n:
+                self.add_card(c['name'], 2)
+
+def usage_card_sets():
+    print('Supported expansion values for --set:')
+    for s in CardSet:
+        if s.is_standard:
+            print('{}{}'.format(str(s.value).ljust(7, '.'),
+                                HSCollection.readable_card_set(s.name)))
 
 def usage():
-    print('select one operation:\n'
-          '\t--deck (load a deck string)\n'
-          '\t--list (add cards from a file list\n'
-          '\t--set (add all cards in expansion\n'
-          '\t--card --count (add this card count times)', file=sys.stderr)
+    print('''
+Select one operation:
+    --deck (load a deck string)
+    --list (add cards from a file list)
+    --set (add all cards in expansion)
+    --card --count (add this card count times)
+
+TODO: Operations for adding cards can be specified multiple times.''', file=sys.stderr)
+    print('')
+    usage_card_sets()
+    print('')
 
 def bad_usage(msg):
     usage()
