@@ -189,7 +189,7 @@ Select one operation:
     --set (add all cards in expansion)
     --card --count (add this card count times)
 
-TODO: Operations for adding cards can be specified multiple times.''', file=sys.stderr)
+Operations for adding cards can be specified multiple times.''', file=sys.stderr)
     print('')
     usage_card_sets()
     print('')
@@ -198,17 +198,41 @@ def bad_usage(msg):
     usage()
     sys.exit('ERROR: {}'.format(msg))
 
+def process_arg_card(collection, cards, counts):
+    if not cards or not counts:
+        return
+    if len(cards) != len(counts):
+        bad_usage('Mismatching --card and --count given')
+    for card, count in zip(cards, counts):
+        collection.add_card(card, count)
+
+def process_arg_list(collection, card_lists):
+    if not card_lists:
+        return
+    for l in card_lists:
+        collection.add_from_file(l)
+
+def process_arg_set(collection, card_sets):
+    if not card_sets:
+        return
+    for s in card_sets:
+        collection.add_card_set(s)
+
 if __name__ == '__main__':
     parser = argparse.ArgumentParser('Manage Hearthstone cards collection')
     parser.add_argument('-c', '--collectible', help='cards.collectible.json')
     parser.add_argument('-m', '--mycollection', help='mycollection.json')
 
-    group = parser.add_mutually_exclusive_group()
+    group = parser.add_mutually_exclusive_group(required=True)
     group.add_argument('--deck', help='deck string')
-    group.add_argument('--list', help='cards to add listed in a file')
-    group.add_argument('--set', help='add all cards in expansion set')
-    group.add_argument('--card', help='add card by name')
-    parser.add_argument('--count', help='card count: 1 or 2')
+    group.add_argument('--list', help='cards to add listed in a file',
+                       action='append')
+    group.add_argument('--set', help='add all cards in expansion set',
+                       action='append')
+    group.add_argument('--card', help='add card by name',
+                       action='append')
+    parser.add_argument('--count', help='card count: 1 or 2',
+                        action='append')
 
     args = parser.parse_args()
 
@@ -220,15 +244,9 @@ if __name__ == '__main__':
         sys.exit(0)
 
     # Operations for adding cards to mycollection.
-    if (args.card and not args.count) or (not args.card and args.count):
-        bad_usage('--card and --count must be used together')
-    if args.card:
-        collection.add_card(args.card, args.count)
-    if args.list:
-        collection.add_from_file(args.list)
-    elif args.set:
-        collection.add_card_set(args.set)
-    else:
-        bad_usage('Operation missing')
+    process_arg_card(collection, args.card, args.count)
+    process_arg_list(collection, args.list)
+    process_arg_set(collection, args.set)
+
     collection.save()
 
