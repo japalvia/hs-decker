@@ -46,6 +46,14 @@ Cards are always added, delete mycollection.json when using single card list.
 	-m data/mycollection.json \
 	--card "Arcane Missiles" --count 2
 
+* Add all cards in an extension:
+  ./src/hscollection.py \
+    -c data/cards.collectible.json \
+    -m data/mycollection.json \
+    --set 1004
+
+    The set enumerations are documented in the command usage.
+
 * Load a deck string to see what cards are missing:
 ./src/hscollection.py \
     -c data/cards.collectible.json \
