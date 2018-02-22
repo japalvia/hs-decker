@@ -177,6 +177,7 @@
 1   Light's Sorrow
 2   Silvermoon Portal
 2   Truesilver Champion
+1   Holy Wrath
 1   Level Up!
 2   Blackguard
 2   Crystal Lion
@@ -459,7 +460,7 @@
 2   Bloodfen Raptor
 2   Bloodsail Raider
 2   Bluegill Warrior
-1   Crazed Alchemist
+2   Crazed Alchemist
 2   Dire Wolf Alpha
 2   Faerie Dragon
 2   Fallen Sun Cleric
@@ -634,7 +635,7 @@
 2   Lord of the Arena
 2   Moat Lurker
 2   Necrotic Geist
-1   Priestess of Elune
+2   Priestess of Elune
 2   Reckless Rocketeer
 2   Sabretooth Stalker
 1   Skulking Geist
