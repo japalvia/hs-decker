@@ -18,7 +18,7 @@ class HSCollection:
         self.load_mycollection(mycollection_path)
 
     def error(self, message):
-        sys.exit('ERROR:' + message)
+        sys.exit('ERROR: ' + message)
 
     def load_collectible(self, collectible):
         with open(collectible) as f:
@@ -43,6 +43,28 @@ class HSCollection:
         except FileNotFoundError:
             print('Initializing empty collection')
             self.mycollection = json.loads('[]')
+
+    def remove_card(self, name, count):
+        count = int(count)
+        if count != 1 and count != 2:
+            self.error('Card count ({}) must be (1) or (2)'.format(count))
+        if not self.mycollection:
+            self.error('Failed to remove \'{}\' from an empty collection.'.
+                       format(name))
+
+        for i, c in enumerate(self.mycollection):
+            if c['name'] == name:
+                if c['count'] > count:
+                    c['count'] = c['count'] - count
+                elif c['count'] == count:
+                    del self.mycollection[i]
+                else:
+                    self.error('Failed to remove count ({}) \'{}\'.'
+                               'Collection has count ({})'.format(
+                               count, name, c['count']))
+                return
+
+            self.error('Failed to remove \'{}\': card not found'.format(name))
 
     def add_card(self, name, count):
         count = int(count)
@@ -198,21 +220,29 @@ def bad_usage(msg):
     usage()
     sys.exit('ERROR: {}'.format(msg))
 
-def process_arg_card(collection, cards, counts):
+def opts_add_card(collection, cards, counts):
     if not cards or not counts:
         return
     if len(cards) != len(counts):
-        bad_usage('Mismatching --card and --count given')
+        bad_usage('Mismatching --add-card and --count given')
     for card, count in zip(cards, counts):
         collection.add_card(card, count)
 
-def process_arg_list(collection, card_lists):
+def opts_remove_card(collection, cards, counts):
+    if not cards or not counts:
+        return
+    if len(cards) != len(counts):
+        bad_usage('Mismatching --remove-card and --count given')
+    for card, count in zip(cards, counts):
+        collection.remove_card(card, count)
+
+def opts_add_list(collection, card_lists):
     if not card_lists:
         return
     for l in card_lists:
         collection.add_from_file(l)
 
-def process_arg_set(collection, card_sets):
+def opts_add_set(collection, card_sets):
     if not card_sets:
         return
     for s in card_sets:
@@ -229,7 +259,9 @@ if __name__ == '__main__':
                        action='append')
     group.add_argument('--set', help='add all cards in expansion set',
                        action='append')
-    group.add_argument('--card', help='add card by name',
+    group.add_argument('--add-card', help='add card by name',
+                       action='append')
+    group.add_argument('--remove-card', help='remove card by name',
                        action='append')
     parser.add_argument('--count', help='card count: 1 or 2',
                         action='append')
@@ -244,9 +276,10 @@ if __name__ == '__main__':
         sys.exit(0)
 
     # Operations for adding cards to mycollection.
-    process_arg_card(collection, args.card, args.count)
-    process_arg_list(collection, args.list)
-    process_arg_set(collection, args.set)
+    opts_add_card(collection, args.add_card, args.count)
+    opts_remove_card(collection, args.remove_card, args.count)
+    opts_add_list(collection, args.list)
+    opts_add_set(collection, args.set)
 
     collection.save()
 
