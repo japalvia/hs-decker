@@ -241,22 +241,19 @@ def opts_show_deck(collection, args):
     if args.deck:
         collection.show_deck(args.deck)
 
-# def load_collection(args):
-
 if __name__ == '__main__':
     parser = argparse.ArgumentParser('hscollection')
     parser.add_argument('-c', '--collectible', help='cards.collectible.json')
     parser.add_argument('-m', '--mycollection', help='mycollection.json')
     parser.add_argument('-r', '--reset', action='store_true',
                         help='reset your collection')
-    #parser.set_defaults(func=load_collection, args)
     subparsers = parser.add_subparsers(help='TODO subcommand help')
 
     addparser = subparsers.add_parser('add',
                                        help='add cards to your collection',
                                        formatter_class=argparse.RawTextHelpFormatter)
     addparser.add_argument('-c', '--card', action='append', help='card name')
-    addparser.add_argument('-l', '--list', action='append')
+    addparser.add_argument('-l', '--list', action='append', help=' file path')
     addparser.add_argument('-s', '--set', action='append', type=int,
                            choices=cardset_enums(),
                            help=usage_card_sets())
@@ -264,7 +261,7 @@ if __name__ == '__main__':
 
     remparser = subparsers.add_parser('remove',
                                       help='remove cards from your collection')
-    remparser.add_argument('rem_card')
+    remparser.add_argument('rem_card', help='card name')
     remparser.set_defaults(func=opts_rem_cards)
 
     deckparser = subparsers.add_parser('deck',
@@ -278,6 +275,7 @@ if __name__ == '__main__':
     if args.reset:
         collection.reset()
 
+    # Handle subcommand
     args.func(collection, args)
 
     collection.save()
