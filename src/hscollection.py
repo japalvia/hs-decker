@@ -44,7 +44,10 @@ class HSCollection:
             print('Initializing empty collection')
             self.mycollection = json.loads('[]')
 
-    def remove_card(self, name, count):
+    def reset(self):
+        self.mycollection = json.loads('[]')
+
+    def remove_card(self, name, count=1):
         count = int(count)
         if count != 1 and count != 2:
             self.error('Card count ({}) must be (1) or (2)'.format(count))
@@ -66,7 +69,7 @@ class HSCollection:
 
             self.error('Failed to remove \'{}\': card not found'.format(name))
 
-    def add_card(self, name, count):
+    def add_card(self, name, count=1):
         count = int(count)
         if count != 1 and count != 2:
             self.error('Card count ({}) must be (1) or (2)'.format(count))
@@ -220,66 +223,63 @@ def bad_usage(msg):
     usage()
     sys.exit('ERROR: {}'.format(msg))
 
-def opts_add_card(collection, cards, counts):
-    if not cards or not counts:
-        return
-    if len(cards) != len(counts):
-        bad_usage('Mismatching --add-card and --count given')
-    for card, count in zip(cards, counts):
-        collection.add_card(card, count)
+def opts_add_cards(collection, args):
+    if  args.card:
+        for c in args.card:
+            collection.add_card(c)
+    if args.set:
+        for s in args.set:
+            collection.add_card_set(s)
+    if args.list:
+        for l in args.list:
+            collection.add_from_file(l)
 
-def opts_remove_card(collection, cards, counts):
-    if not cards or not counts:
-        return
-    if len(cards) != len(counts):
-        bad_usage('Mismatching --remove-card and --count given')
-    for card, count in zip(cards, counts):
-        collection.remove_card(card, count)
+def opts_rem_cards(collection, args):
+    if isinstance(args.rem_card, str):
+        collection.remove_card(args.rem_card)
+    elif isinstance(args.rem_card, list):
+        for c in args.rem_card:
+            collection.remove_card(c)
 
-def opts_add_list(collection, card_lists):
-    if not card_lists:
-        return
-    for l in card_lists:
-        collection.add_from_file(l)
+def opts_show_deck(collection, args):
+    if args.deck:
+        collection.show_deck(args.deck)
 
-def opts_add_set(collection, card_sets):
-    if not card_sets:
-        return
-    for s in card_sets:
-        collection.add_card_set(s)
+# def load_collection(args):
 
 if __name__ == '__main__':
-    parser = argparse.ArgumentParser('Manage Hearthstone cards collection')
+    parser = argparse.ArgumentParser('hscollection')
     parser.add_argument('-c', '--collectible', help='cards.collectible.json')
     parser.add_argument('-m', '--mycollection', help='mycollection.json')
+    parser.add_argument('-r', '--reset', action='store_true',
+                        help='reset your collection')
+    #parser.set_defaults(func=load_collection, args)
+    subparsers = parser.add_subparsers(help='TODO subcommand help')
 
-    group = parser.add_mutually_exclusive_group(required=True)
-    group.add_argument('--deck', help='deck string')
-    group.add_argument('--list', help='cards to add listed in a file',
-                       action='append')
-    group.add_argument('--set', help='add all cards in expansion set',
-                       action='append')
-    group.add_argument('--add-card', help='add card by name',
-                       action='append')
-    group.add_argument('--remove-card', help='remove card by name',
-                       action='append')
-    parser.add_argument('--count', help='card count: 1 or 2',
-                        action='append')
+    addparser = subparsers.add_parser('add',
+                                       help='add cards to your collection')
+    addparser.add_argument('-c', '--card', action='append', help='card name')
+    addparser.add_argument('-s', '--set', action='append')
+    addparser.add_argument('-l', '--list', action='append')
+    addparser.set_defaults(func=opts_add_cards)
+
+    remparser = subparsers.add_parser('remove',
+                                      help='remove cards from your collection')
+    remparser.add_argument('rem_card')
+    remparser.set_defaults(func=opts_rem_cards)
+
+    deckparser = subparsers.add_parser('deck',
+                                       help='display a deck using your collection')
+    deckparser.add_argument('deck', help='deck string')
+    deckparser.set_defaults(func=opts_show_deck)
 
     args = parser.parse_args()
 
     collection = HSCollection(args.collectible, args.mycollection)
+    if args.reset:
+        collection.reset()
 
-    # Operations for constructing a deck with deck string from collection.
-    if args.deck:
-        collection.show_deck(args.deck)
-        sys.exit(0)
-
-    # Operations for adding cards to mycollection.
-    opts_add_card(collection, args.add_card, args.count)
-    opts_remove_card(collection, args.remove_card, args.count)
-    opts_add_list(collection, args.list)
-    opts_add_set(collection, args.set)
+    args.func(collection, args)
 
     collection.save()
 
