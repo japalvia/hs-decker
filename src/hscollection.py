@@ -3,6 +3,7 @@
 import argparse
 import binascii
 import json
+import os
 import sys
 
 from hearthstone.deckstrings import Deck
@@ -200,27 +201,22 @@ class HSCollection:
                 self.add_card(c['name'], 2)
 
 def usage_card_sets():
-    print('Supported expansion values for --set:')
+    usage = ''
     for s in CardSet:
         if s.is_standard:
-            print('{}{}'.format(str(s.value).ljust(7, '.'),
-                                HSCollection.readable_card_set(s.name)))
+             usage = '{}{}{}{}'.format(usage, str(s.value).ljust(7, '.'),
+                                       HSCollection.readable_card_set(s.name),
+                                       os.linesep)
+    return usage
 
-def usage():
-    print('''
-Select one operation:
-    --deck (load a deck string)
-    --list (add cards from a file list)
-    --set (add all cards in expansion)
-    --card --count (add this card count times)
-
-Operations for adding cards can be specified multiple times.''', file=sys.stderr)
-    print('')
-    usage_card_sets()
-    print('')
+def cardset_enums():
+    enums = []
+    for s in CardSet:
+        if s.is_standard:
+            enums.append(s.value)
+    return enums
 
 def bad_usage(msg):
-    usage()
     sys.exit('ERROR: {}'.format(msg))
 
 def opts_add_cards(collection, args):
@@ -257,10 +253,13 @@ if __name__ == '__main__':
     subparsers = parser.add_subparsers(help='TODO subcommand help')
 
     addparser = subparsers.add_parser('add',
-                                       help='add cards to your collection')
+                                       help='add cards to your collection',
+                                       formatter_class=argparse.RawTextHelpFormatter)
     addparser.add_argument('-c', '--card', action='append', help='card name')
-    addparser.add_argument('-s', '--set', action='append')
     addparser.add_argument('-l', '--list', action='append')
+    addparser.add_argument('-s', '--set', action='append', type=int,
+                           choices=cardset_enums(),
+                           help=usage_card_sets())
     addparser.set_defaults(func=opts_add_cards)
 
     remparser = subparsers.add_parser('remove',
