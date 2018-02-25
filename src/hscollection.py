@@ -247,7 +247,7 @@ if __name__ == '__main__':
     parser.add_argument('-m', '--mycollection', help='mycollection.json')
     parser.add_argument('-r', '--reset', action='store_true',
                         help='reset your collection')
-    subparsers = parser.add_subparsers(help='TODO subcommand help')
+    subparsers = parser.add_subparsers()
 
     addparser = subparsers.add_parser('add',
                                        help='add cards to your collection',
