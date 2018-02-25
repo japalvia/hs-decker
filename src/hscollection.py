@@ -253,7 +253,7 @@ if __name__ == '__main__':
                                        help='add cards to your collection',
                                        formatter_class=argparse.RawTextHelpFormatter)
     addparser.add_argument('-c', '--card', action='append', help='card name')
-    addparser.add_argument('-l', '--list', action='append', help=' file path')
+    addparser.add_argument('-l', '--list', action='append', help='file path')
     addparser.add_argument('-s', '--set', action='append', type=int,
                            choices=cardset_enums(),
                            help=usage_card_sets())
