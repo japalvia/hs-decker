@@ -32,30 +32,56 @@ Usage
 * Bootstrap card data once:
 ./src/bootstrap.py
 
-* Generate JSON formatted collection from card list:
-./src/hscollection.py \
-    -c data/cards.collectible.json \
-    -m data/mycollection.json \
-    --list data/mycollection.txt
+* Every operation requires specifying the location of card data and your
+  collection (when saved to disk):
+  -c data/cards.collectible.json
+  -m data/mycollection.json
 
-Cards are always added, delete mycollection.json when using single card list.
+* Add cards to your collection by:
+  * their name,
+  * a full expansion set or
+  * from a list file where each line is in the format:
+    [count] [card name]
 
-* Add JSON formatted card to collection by name and count:
-./src/hscollection.py \
-	-c data/cards.collectible.json \
-	-m data/mycollection.json \
-	--card "Arcane Missiles" --count 2
+  See full command syntax: ./src/hscollection.py add -h
 
-* Add all cards in an extension:
-  ./src/hscollection.py \
-    -c data/cards.collectible.json \
-    -m data/mycollection.json \
-    --set 1004
+* Remove a card by their name: ./src/hscollection.py remove [card name]
 
-    The set enumerations are documented in the command usage.
+* Reset your collection to empty: ./src/hscollection.py --reset
 
-* Load a deck string to see what cards are missing:
-./src/hscollection.py \
-    -c data/cards.collectible.json \
-    -m data/mycollection.json \
-    --deck AAECAZICCMUEogmoqwKfsAKhtwLguwLCzgKZ0wILQF/+AcQG5Ai+rgLLvAL5wALJxwKgzQKHzgIA
+* Display a deck using a deck string: ./src/hscollection.py deck [deck]
+  This is useful when looking if a deck is feasible for crafting: each missing
+  card is shown its cost and total cost of crafting required (based on your
+  current collection.
+
+  Example:
+    ./src/hscollection.py -c data/cards.collectible.json -m data/mycollection.json \
+	deck AAECAf0GBvIF4KwCoM4C+NACl9MC2OcCDNsGtgfECMwIm8IC3sQC38QC58sC8tACiNIC/OUC6OcCAA==
+
+    ### Checking cards in my collection ###
+
+    1 Spellbreaker...............OK
+    1 N'Zoth, the Corruptor......OK
+    1 Skulking Geist.............OK
+    1 Dark Pact..................OK
+    1 Bloodreaver Gul'dan........OK
+    1 Rin, the First Disciple....OK
+    2 Twisting Nether............missing (2): 800 dust (Classic)
+    2 Hellfire...................OK
+    2 Mortal Coil................OK
+    2 Siphon Soul................missing (2): 200 dust (Classic)
+    2 Stonehill Defender.........missing (1): 100 dust (Journey to Un'Goro)
+    2 Mistress of Mixtures.......missing (2): 80 dust (Mean Streets of Gadgetzan)
+    2 Dirty Rat..................missing (2): 800 dust (Mean Streets of Gadgetzan)
+    2 Defile.....................OK
+    2 Kobold Librarian...........OK
+    2 Lesser Amethyst Spellstone.OK
+    2 Possessed Lackey...........OK
+    2 Voidlord...................missing (2): 800 dust (Kobolds and Catacombs)
+
+    ### Requires 2780 dust ###
+
+Notes
+-----
+
+Current version supports only Standard card sets.
