@@ -35,7 +35,7 @@
 1   Force of Nature
 2   Verdant Longneck
 2   Webweave
-1   Jade Behemoth
+2   Jade Behemoth
 2   Menagerie Warden
 2   Moonglade Portal
 2   Spreading Plague
@@ -265,6 +265,7 @@
 2   Blade Flurry
 2   Elven Minstrel
 1   Fal'dorei Strider
+1   Kobold Illusionist
 1   Master of Disguise
 2   Obsidian Shard
 2   Runeforge Haunter
