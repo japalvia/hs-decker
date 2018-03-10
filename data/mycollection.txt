@@ -572,6 +572,7 @@
 2   Fire Plume Phoenix
 2   Gnomish Inventor
 2   Grave Shambler
+1   Grim Necromancer
 2   Hoarding Dragon
 2   Hozen Healer
 2   Jade Spirit
@@ -587,6 +588,7 @@
 2   Phantom Freebooter
 2   Saronite Chain Gang
 2   Sen'jin Shieldmasta
+1   Shimmering Courser
 2   Shroom Brewer
 2   Silvermoon Guardian
 2   Sneaky Devil
@@ -595,7 +597,7 @@
 2   Stormwind Knight
 1   Tanaris Hogchopper
 2   Ticking Abomination
-1   Tol'vir Stoneshaper
+2   Tol'vir Stoneshaper
 1   Twilight Drake
 2   Violet Teacher
 2   Wicked Skeleton
@@ -603,6 +605,7 @@
 1   Abomination
 1   Arcane Tyrant
 2   Avian Watcher
+1   Bittertide Hydra
 2   Bloodworm
 2   Booty Bay Bodyguard
 2   Cobalt Scalebane
@@ -630,6 +633,7 @@
 2   Stranglethorn Tiger
 1   Streetwise Investigator
 2   Sunborne Val'kyr
+1   Tomb Lurker
 2   Trogg Gloomeater
 2   Venomancer
 1   Venture Co. Mercenary
@@ -648,7 +652,7 @@
 2   Priestess of Elune
 2   Reckless Rocketeer
 2   Sabretooth Stalker
-1   Skulking Geist
+2   Skulking Geist
 2   Spellweaver
 2   Windfury Harpy
 2   Bonemare
@@ -661,7 +665,7 @@
 1   The Curator
 1   Volcanosaur
 2   War Golem
-1   Charged Devilsaur
+2   Charged Devilsaur
 1   Gruul
 1   Marin the Fox
 1   Medivh, the Guardian
