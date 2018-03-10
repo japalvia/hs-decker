@@ -8,6 +8,7 @@
 2   Naturalize
 1   Lesser Jasper Spellstone
 2   Savagery
+1   Druid of the Swarm
 2   Mark of the Wild
 1   Power of the Wild
 2   Tortollan Forager
@@ -54,6 +55,7 @@
 2   Jeweled Macaw
 2   On the Hunt
 2   Play Dead
+1   Raptor Hatchling
 2   Timber Wolf
 2   Tracking
 2   Cat Trick
@@ -72,7 +74,7 @@
 2   Animal Companion
 2   Bearshark
 1   Carrion Grub
-1   Cave Hydra
+2   Cave Hydra
 2   Cloaked Huntress
 2   Deadly Shot
 1   Eaglehorn Bow
@@ -113,7 +115,7 @@
 2   Ice Walker
 1   Lesser Ruby Spellstone
 2   Medivh's Valet
-1   Primordial Glyph
+2   Primordial Glyph
 2   Raven Familiar
 2   Shimmering Tempest
 2   Sorcerer's Apprentice
@@ -129,12 +131,14 @@
 2   Kirin Tor Mage
 1   Mana Bind
 2   Mirror Entity
+1   Simulacrum
 1   Cone of Cold
 1   Ethereal Arcanist
 2   Fireball
 2   Ghastly Conjurer
 2   Leyline Manipulator
 2   Polymorph
+1   Steam Surger
 2   Water Elemental
 2   Deck of Wonders
 1   Dragon's Fury
@@ -203,6 +207,7 @@
 2   Purify
 2   Radiant Elemental
 2   Shadow Ascendant
+1   Shadow Visions
 2   Shadow Word: Pain
 2   Spirit Lash
 2   Acolyte of Agony
@@ -226,8 +231,9 @@
 2   Onyx Bishop
 2   Cabal Shadow Priest
 1   Embrace Darkness
+1   Shadow Essence
 2   Temple Enforcer
-1   Lesser Diamond Spellstone
+2   Lesser Diamond Spellstone
 1   Prophet Velen
 2   Free From Amber
 1   Shadowreaper Anduin
@@ -253,7 +259,7 @@
 2   Roll the Bones
 2   Sap
 2   Shiv
-1   Sudden Betrayal
+2   Sudden Betrayal
 2   Deadly Fork
 2   Fan of Knives
 1   Mimic Pod
@@ -265,7 +271,7 @@
 2   Blade Flurry
 2   Elven Minstrel
 1   Fal'dorei Strider
-1   Kobold Illusionist
+2   Kobold Illusionist
 1   Master of Disguise
 2   Obsidian Shard
 2   Runeforge Haunter
@@ -301,7 +307,7 @@
 2   Windfury
 2   Drakkari Defender
 2   Healing Rain
-1   Hot Spring Guardian
+2   Hot Spring Guardian
 2   Ice Breaker
 1   Lava Burst
 2   Lightning Storm
@@ -367,7 +373,7 @@
 2   Kara Kazham!
 2   Possessed Lackey
 2   Tar Lurker
-1   Cruel Dinomancer
+2   Cruel Dinomancer
 2   Dread Infernal
 1   Rin, the First Disciple
 1   Abyssal Enforcer
@@ -386,7 +392,7 @@
 2   Battle Rage
 2   Cleave
 1   Commanding Shout
-1   Cornered Sentry
+2   Cornered Sentry
 2   Cruel Taskmaster
 1   Drywhisker Armorer
 2   Execute
@@ -409,7 +415,7 @@
 2   Kor'kron Elite
 2   Mortal Strike
 2   Arcanite Reaper
-1   Death Revenant
+2   Death Revenant
 1   Direhorn Hatchling
 2   Fool's Bane
 2   Ironforge Portal
@@ -429,7 +435,7 @@
 2   Dire Mole
 2   Elven Archer
 1   Emerald Hive Queen
-1   Emerald Reaver
+2   Emerald Reaver
 2   Feral Gibberer
 2   Fire Fly
 2   Glacial Shard
@@ -503,6 +509,7 @@
 1   Emperor Cobra
 2   Flesheating Ghoul
 2   Fungal Enchanter
+1   Giant Wasp
 2   Grimestreet Smuggler
 2   Happy Ghoul
 1   Harvest Golem
@@ -519,10 +526,11 @@
 2   Kobold Apprentice
 2   Lone Champion
 2   Magma Rager
-1   Mindbreaker
+2   Mindbreaker
 1   Moroes
 2   Pantry Spider
 2   Primalfin Lookout
+1   Pterrordax Hatchling
 2   Questing Adventurer
 1   Raging Worgen
 2   Raid Leader
@@ -533,12 +541,13 @@
 2   Shattered Sun Cleric
 1   Shrieking Shroom
 2   Silverback Patriarch
-1   Stonehill Defender
+2   Stonehill Defender
 2   Stoneskin Basilisk
 1   Street Trickster
 2   Tar Creeper
 2   Tauren Warrior
 2   Thrallmar Farseer
+1   Thunder Lizard
 2   Toothy Chest
 2   Vicious Fledgling
 2   Violet Illusionist
