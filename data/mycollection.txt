@@ -113,7 +113,7 @@
 2   Flame Geyser
 2   Frostbolt
 2   Ice Walker
-1   Lesser Ruby Spellstone
+2   Lesser Ruby Spellstone
 2   Medivh's Valet
 2   Primordial Glyph
 2   Raven Familiar
@@ -394,7 +394,7 @@
 1   Commanding Shout
 2   Cornered Sentry
 2   Cruel Taskmaster
-1   Drywhisker Armorer
+2   Drywhisker Armorer
 2   Execute
 2   Forge of Souls
 2   Heroic Strike
@@ -517,6 +517,7 @@
 1   Humongous Razorleaf
 2   Hyldnir Frostrider
 2   Igneous Elemental
+1   Imp Master
 2   Injured Blademaster
 2   Ironbeak Owl
 2   Ironforge Rifleman
@@ -657,6 +658,7 @@
 2   Windfury Harpy
 2   Bonemare
 2   Core Hound
+1   Corridor Creeper
 1   Grotesque Dragonhawk
 2   Ravenholdt Assassin
 1   Sated Threshadon
