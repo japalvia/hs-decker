@@ -6,7 +6,7 @@
 2   Earthen Scales
 2   Enchanted Raven
 2   Naturalize
-1   Lesser Jasper Spellstone
+2   Lesser Jasper Spellstone
 2   Savagery
 1   Druid of the Swarm
 2   Mark of the Wild
@@ -166,7 +166,7 @@
 2   Drygulch Jailor
 2   Holy Light
 2   Hydrologist
-1   Lesser Pearl Spellstone
+2   Lesser Pearl Spellstone
 2   Potion of Heroism
 2   Aldor Peacekeeper
 2   Benevolent Djinn
@@ -536,6 +536,7 @@
 1   Raging Worgen
 2   Raid Leader
 2   Razorfen Hunter
+1   Rummaging Kobold
 2   Scarlet Crusader
 2   Sewer Crawler
 2   Shallow Gravedigger
@@ -675,6 +676,7 @@
 2   Violet Wurm
 1   Dragonhatcher
 2   Giant Mastodon
+1   Master Oakheart
 2   Sleepy Dragon
 1   C'Thun
 1   N'Zoth, the Corruptor
