@@ -17,7 +17,7 @@
 2   Crypt Lord
 2   Elder Longneck
 2   Gnash
-1   Greedy Sprite
+2   Greedy Sprite
 2   Healing Touch
 1   Mark of Nature
 2   Savage Roar
@@ -41,6 +41,7 @@
 2   Moonglade Portal
 2   Spreading Plague
 2   Starfire
+1   Ancient of Lore
 1   Giant Anaconda
 1   Malfurion the Pestilent
 1   Grizzled Guardian
@@ -311,7 +312,7 @@
 2   Ice Breaker
 1   Lava Burst
 2   Lightning Storm
-1   Mana Tide Totem
+2   Mana Tide Totem
 2   Primal Talismans
 1   Spirit Echo
 1   Unbound Elemental
@@ -325,13 +326,13 @@
 2   Bloodlust
 2   Doomhammer
 1   Volcano
-1   Voodoo Hexxer
+2   Voodoo Hexxer
 2   Fire Elemental
 1   Grumble, Worldshaker
 1   Moorabi
 1   Kalimos, Primal Lord
 1   The Runespear
-1   Snowfury Giant
+2   Snowfury Giant
 
 # Warlock
 2   Sacrificial Pact
