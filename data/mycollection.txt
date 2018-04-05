@@ -10,7 +10,7 @@
 2   Savagery
 1   Druid of the Swarm
 2   Mark of the Wild
-1   Power of the Wild
+2   Power of the Wild
 2   Tortollan Forager
 2   Wild Growth
 2   Wrath
@@ -63,7 +63,7 @@
 2   Crackling Razormaw
 1   Dinomancy
 1   Explosive Trap
-1   Flare
+2   Flare
 2   Freezing Trap
 1   Grievous Bite
 2   Kindly Grandmother
@@ -133,6 +133,7 @@
 1   Mana Bind
 2   Mirror Entity
 1   Simulacrum
+1   Spellbender
 1   Cone of Cold
 1   Ethereal Arcanist
 2   Fireball
@@ -611,6 +612,7 @@
 1   Bittertide Hydra
 2   Bloodworm
 2   Booty Bay Bodyguard
+1   Captain Greenskin
 2   Cobalt Scalebane
 1   Corpse Raiser
 2   Corrosive Sludge
