@@ -237,6 +237,7 @@
 2   Temple Enforcer
 2   Lesser Diamond Spellstone
 1   Prophet Velen
+1   Temporus
 2   Free From Amber
 1   Shadowreaper Anduin
 2   Mind Control
@@ -270,6 +271,7 @@
 1   Shadow Rager
 2   Shadowblade
 1   SI:7 Agent
+1   Sonya Shadowdancer
 2   Blade Flurry
 2   Elven Minstrel
 1   Fal'dorei Strider
