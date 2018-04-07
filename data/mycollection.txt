@@ -513,7 +513,7 @@
 1   Emperor Cobra
 2   Flesheating Ghoul
 2   Fungal Enchanter
-1   Giant Wasp
+2   Giant Wasp
 2   Grimestreet Smuggler
 2   Happy Ghoul
 1   Harvest Golem
