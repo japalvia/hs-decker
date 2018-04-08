@@ -444,7 +444,7 @@
 2   Fire Fly
 2   Glacial Shard
 2   Goldshire Footman
-1   Gravelsnout Knight
+2   Gravelsnout Knight
 2   Grimscale Oracle
 1   Hungry Crab
 1   Leper Gnome
