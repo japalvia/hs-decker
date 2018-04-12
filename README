@@ -26,6 +26,9 @@ Prerequisites
 * Python-hearthstone module installed:
 	https://github.com/HearthSim/python-hearthstone
 
+    ./setup.py build
+    sudo ./setup.py install
+
 Usage
 -----
 
