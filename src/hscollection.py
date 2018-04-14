@@ -132,6 +132,7 @@ class HSCollection:
                 CardSet.UNGORO.name : 'Journey to Un\'Goro',
                 CardSet.ICECROWN.name : 'Knights of the Frozen Throne',
                 CardSet.LOOTAPALOOZA.name : 'Kobolds and Catacombs',
+                CardSet.GILNEAS.name : 'Witchwood',
         }
         return switcher.get(card_set, 'Not found:' + card_set)
 
