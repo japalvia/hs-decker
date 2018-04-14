@@ -136,7 +136,9 @@ class HSCollection:
         }
         return switcher.get(card_set, 'Not found:' + card_set)
 
-    '''Return a list of tuplets (card, found, missing)'''
+    '''Return a list of tuplets (card, found, missing)
+       where the type is (dict, int, int) --> (JSON card object, count, count)
+       Invalid cards are filled with minimal data and have 0 total count.'''
     def load_deckstring(self, deckstring):
         cards = []
 
@@ -158,9 +160,13 @@ class HSCollection:
                     else:
                         missing = count - card['count']
                         cards.append((card, card['count'], missing))
+
             card = None
             if not found:
                 card = self.collectible_by_Id(dbfId)
+                if not card:
+                    card = { 'name': 'INVALID DBFID ({})'.format(dbfId) }
+                    count = 0
                 cards.append((card, 0, count))
 
         return cards
@@ -171,23 +177,31 @@ class HSCollection:
             return
 
         total_cost = 0
-        print("\n### Checking cards in my collection ###\n")
+        print('\n### Checking cards in my collection ###\n')
         for ct in cards_tuple:
             card = ct[0]
             found = ct[1]
             missing = ct[2]
-            sys.stdout.write('{} {}'.format(found + missing,
+            count = found + missing
+
+            sys.stdout.write('{} {}'.format(count,
                              card['name'].ljust(27, '.')))
-            if missing:
+            if count != 1 and count != 2:
+                print('FAIL')
+            elif missing:
                 cost = self.crafting_cost(card, missing)
                 total_cost += cost
-                print("missing ({}): {} dust ({})".
+                print('missing ({}): {} dust ({})'.
                       format(missing, cost,
                              self.readable_card_set(card['set'])))
             else:
-                print("OK")
+                print('OK')
 
-        print("\n### Requires {} dust ###\n".format(total_cost))
+        if count == 1 or count == 2:
+            print('\n### Requires {} dust ###\n'.format(total_cost))
+        else:
+            print('\n### Broken deck. Valid cards require {} dust ###\n'
+                  .format(total_cost))
 
     def add_card_set(self, setnumber):
         e = None
