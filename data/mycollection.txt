@@ -206,7 +206,7 @@
 2   Truesilver Champion
 2   Ghostly Charger
 1   Holy Wrath
-1   Level Up!
+2   Level Up!
 2   Blackguard
 2   Crystal Lion
 2   Ivory Knight
@@ -302,7 +302,7 @@
 2   Plague Scientist
 1   Shadow Rager
 2   Shadowblade
-1   SI:7 Agent
+2   SI:7 Agent
 1   Sonya Shadowdancer
 2   Blade Flurry
 2   Elven Minstrel
@@ -315,6 +315,7 @@
 2   Assassinate
 2   Assassin's Blade
 2   Bone Baron
+2   Vilespine Slayer
 1   Cursed Castaway
 2   Ethereal Peddler
 2   Kidnapper
@@ -367,7 +368,7 @@
 2   Windspeaker
 2   Bloodlust
 2   Doomhammer
-1   Volcano
+2   Volcano
 2   Voodoo Hexxer
 2   Fire Elemental
 1   Grumble, Worldshaker
@@ -442,7 +443,7 @@
 2   Whirlwind
 2   Battle Rage
 2   Cleave
-1   Commanding Shout
+2   Commanding Shout
 2   Cornered Sentry
 2   Cruel Taskmaster
 2   Drywhisker Armorer
@@ -485,6 +486,7 @@
 
 # Neutral
 2   Snowflipper Penguin
+1   Wisp
 2   Acherus Veteran
 2   Arcane Anomaly
 2   Argent Squire
@@ -522,6 +524,7 @@
 2   Acidic Swamp Ooze
 2   Amani Berserker
 2   Ancient Watcher
+1   Baleful Banker
 2   Beckoner of Evil
 2   Bloodfen Raptor
 2   Bloodsail Raider
@@ -569,7 +572,7 @@
 1   Drakkari Enchanter
 2   Earthen Ring Farseer
 2   Eggnapper
-1   Emperor Cobra
+2   Emperor Cobra
 2   Flesheating Ghoul
 2   Fungal Enchanter
 2   Giant Wasp
