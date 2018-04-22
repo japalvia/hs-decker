@@ -8,6 +8,7 @@
 2   Naturalize
 2   Lesser Jasper Spellstone
 2   Savagery
+2   Witching Hour
 1   Druid of the Swarm
 2   Mark of the Wild
 2   Power of the Wild
@@ -39,6 +40,7 @@
 2   Bewitched Guardian
 2   Druid of the Claw
 1   Force of Nature
+1   Gloom Stag
 2   Verdant Longneck
 2   Webweave
 2   Jade Behemoth
@@ -97,7 +99,7 @@
 2   Flanking Strike
 2   Houndmaster
 2   Multi-Shot
-1   Wing Blast
+2   Wing Blast
 2   Carrion Drake
 2   Corpse Widow
 1   Explosive Shot
@@ -135,6 +137,7 @@
 2   Sorcerer's Apprentice
 2   Arcane Intellect
 2   Black Cat
+1   Cinderstorm
 2   Coldwraith
 2   Counterspell
 2   Doomed Apprentice
@@ -158,6 +161,7 @@
 2   Vex Crow
 2   Water Elemental
 2   Bonfire Elemental
+2   Curio Collector
 2   Deck of Wonders
 1   Dragon's Fury
 1   Archmage Antonidas
@@ -195,7 +199,7 @@
 2   Nightbane Templar
 2   Unidentified Maul
 1   Arrogant Crusader
-1   Bellringer Sentry
+2   Bellringer Sentry
 2   Blessing of Kings
 2   Chillblade Champion
 2   Consecration
@@ -213,7 +217,7 @@
 1   Spikeridged Steed
 2   Guardian of Kings
 2   Vinecleaver
-1   Silver Sword
+2   Silver Sword
 
 # Priest
 2   Circle of Healing
@@ -255,7 +259,7 @@
 2   Tortollan Shellraiser
 2   Devour Mind
 2   Holy Nova
-1   Holy Water
+2   Holy Water
 2   Onyx Bishop
 2   Quartz Elemental
 2   Cabal Shadow Priest
@@ -374,6 +378,7 @@
 1   Grumble, Worldshaker
 1   Moorabi
 1   Bogshaper
+1   Al'Akir the Windlord
 1   Kalimos, Primal Lord
 1   The Runespear
 1   Shudderwock
@@ -409,6 +414,7 @@
 2   Treachery
 2   Unwilling Sacrifice
 1   Void Terror
+1   Blood Witch
 1   Cataclysm
 2   Fiendish Circle
 2   Hellfire
@@ -455,7 +461,7 @@
 2   Slam
 2   Warpath
 2   Bloodsail Cultist
-1   Woodcutter's Axe
+2   Woodcutter's Axe
 2   Fiery War Axe
 2   Frothing Berserker
 2   Grimestreet Pawnbroker
@@ -469,7 +475,7 @@
 2   Arathi Weaponsmith
 2   Blood Razor
 2   Kor'kron Elite
-1   Militia Commander
+2   Militia Commander
 2   Mortal Strike
 2   Arcanite Reaper
 2   Death Revenant
@@ -514,7 +520,7 @@
 2   Stonetusk Boar
 2   Swamp Dragon Egg
 1   Tentacle of N'Zoth
-1   Swamp Leech
+2   Swamp Leech
 2   Voodoo Doctor
 2   Wax Elemental
 1   Worgen Infiltrator
@@ -524,7 +530,7 @@
 2   Acidic Swamp Ooze
 2   Amani Berserker
 2   Ancient Watcher
-1   Baleful Banker
+2   Baleful Banker
 2   Beckoner of Evil
 2   Bloodfen Raptor
 2   Bloodsail Raider
@@ -645,7 +651,7 @@
 2   Dragonling Mechanic
 2   Dread Corsair
 2   Ebon Dragonsmith
-1   Felsoul Inquisitor
+2   Felsoul Inquisitor
 1   Evolved Kobold
 2   Fire Plume Phoenix
 2   Gnomish Inventor
@@ -666,7 +672,9 @@
 2   Oasis Snapjaw
 2   Ogre Magi
 2   Phantom Freebooter
+1   Sandbinder
 2   Saronite Chain Gang
+1   Scaleworm
 2   Sen'jin Shieldmasta
 1   Shimmering Courser
 2   Shroom Brewer
@@ -683,7 +691,7 @@
 2   Unpowered Steambot
 2   Violet Teacher
 2   Wicked Skeleton
-1   Witchwood Piper
+2   Witchwood Piper
 2   Worgen Greaser
 1   Abomination
 1   Arcane Tyrant
@@ -693,7 +701,7 @@
 2   Booty Bay Bodyguard
 1   Captain Greenskin
 2   Chief Inspector
-1   Clockwork Automaton
+2   Clockwork Automaton
 2   Cobalt Scalebane
 1   Corpse Raiser
 2   Corrosive Sludge
@@ -749,7 +757,7 @@
 2   Core Hound
 1   Corridor Creeper
 2   Darkmire Moonkin
-1   Furious Ettin
+2   Furious Ettin
 1   Grotesque Dragonhawk
 2   Ravenholdt Assassin
 1   Sated Threshadon
@@ -758,9 +766,12 @@
 1   The Curator
 1   Volcanosaur
 2   War Golem
+1   Worgen Abomination
 2   Wyrmguard
 1   Cauldron Elemental
 2   Charged Devilsaur
+1   Deranged Doctor
+1   Gilnean Royal Guard
 1   Gruul
 1   Marin the Fox
 1   Medivh, the Guardian
