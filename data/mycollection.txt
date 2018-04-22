@@ -554,6 +554,7 @@
 2   Novice Engineer
 2   Plated Beetle
 2   Pompous Thespian
+1   Prince Keleseth
 2   Ravasaur Runt
 2   River Crocolisk
 1   Rockpool Hunter
