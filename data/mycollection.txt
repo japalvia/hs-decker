@@ -255,7 +255,7 @@
 2   Lightspawn
 1   Mass Dispel
 2   Priest of the Feast
-1   Shadow Madness
+2   Shadow Madness
 2   Tortollan Shellraiser
 2   Devour Mind
 2   Holy Nova
@@ -263,7 +263,7 @@
 2   Onyx Bishop
 2   Quartz Elemental
 2   Cabal Shadow Priest
-1   Coffin Crasher
+2   Coffin Crasher
 1   Embrace Darkness
 1   Shadow Essence
 2   Temple Enforcer
@@ -478,6 +478,7 @@
 2   Militia Commander
 2   Mortal Strike
 2   Arcanite Reaper
+1   Darius Crowley
 2   Death Revenant
 1   Direhorn Hatchling
 2   Festeroot Hulk
@@ -508,7 +509,7 @@
 2   Gravelsnout Knight
 2   Grimscale Oracle
 1   Hungry Crab
-1   Leper Gnome
+2   Leper Gnome
 1   Lightwarden
 2   Murloc Raider
 2   Murloc Tidecaller
@@ -561,6 +562,7 @@
 2   Scorp-o-matic
 2   Spellshifter
 2   Stubborn Gastropod
+1   Sunfury Protector
 2   Tainted Zealot
 2   Tuskarr Fisherman
 2   Vicious Scalehide
@@ -611,7 +613,7 @@
 1   Pterrordax Hatchling
 2   Pumpkin Peasant
 2   Questing Adventurer
-1   Raging Worgen
+2   Raging Worgen
 2   Raid Leader
 2   Ravencaller
 2   Razorfen Hunter
@@ -769,7 +771,7 @@
 2   War Golem
 1   Worgen Abomination
 2   Wyrmguard
-1   Cauldron Elemental
+2   Cauldron Elemental
 2   Charged Devilsaur
 1   Deranged Doctor
 1   Gilnean Royal Guard
