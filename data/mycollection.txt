@@ -195,7 +195,7 @@
 2   Aldor Peacekeeper
 2   Benevolent Djinn
 2   Howling Commander
-1   Paragon of Light
+2   Paragon of Light
 2   Nightbane Templar
 2   Unidentified Maul
 1   Arrogant Crusader
@@ -351,6 +351,7 @@
 2   Murmuring Elemental
 2   Primalfin Totem
 2   Rockbiter Weapon
+1   Stormforged Axe
 2   Spirit Claws
 2   Windfury
 2   Drakkari Defender
@@ -569,7 +570,7 @@
 2   Volatile Elemental
 2   Youthful Brewmaster
 2   Acolyte of Pain
-1   Blackwald Pixie
+2   Blackwald Pixie
 2   Boisterous Bard
 2   Coldlight Oracle
 2   Dalaran Mage
