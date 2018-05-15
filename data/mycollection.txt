@@ -312,7 +312,7 @@
 2   Elven Minstrel
 1   Fal'dorei Strider
 2   Kobold Illusionist
-1   Master of Disguise
+2   Master of Disguise
 2   Obsidian Shard
 2   Runeforge Haunter
 2   WANTED!
@@ -448,6 +448,7 @@
 1   Town Crier
 2   Upgrade!
 2   Whirlwind
+1   Armorsmith
 2   Battle Rage
 2   Cleave
 2   Commanding Shout
