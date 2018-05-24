@@ -174,6 +174,7 @@
 2   Adaptation
 2   Blessing of Might
 1   Blessing of Wisdom
+1   Eye for an Eye
 2   Hand of Protection
 2   Humility
 2   Light's Justice
@@ -489,6 +490,7 @@
 2   Gemstudded Golem
 2   Ornery Direhorn
 2   Unidentified Shield
+1   Gorehowl
 2   Lesser Mithril Spellstone
 2   Tar Lord
 2   Woecleaver
@@ -692,7 +694,7 @@
 1   Tanaris Hogchopper
 2   Ticking Abomination
 2   Tol'vir Stoneshaper
-1   Twilight Drake
+2   Twilight Drake
 2   Unpowered Steambot
 2   Violet Teacher
 2   Wicked Skeleton
