@@ -23,7 +23,7 @@
 2   Gnash
 2   Greedy Sprite
 2   Healing Touch
-1   Mark of Nature
+2   Mark of Nature
 2   Savage Roar
 2   Bite
 1   Branching Paths
@@ -125,6 +125,7 @@
 2   Mirror Image
 2   Arcane Explosion
 2   Arcanologist
+2   Book of Specters
 2   Flame Geyser
 2   Frostbolt
 2   Ice Walker
@@ -416,7 +417,7 @@
 2   Treachery
 2   Unwilling Sacrifice
 1   Void Terror
-1   Blood Witch
+2   Blood Witch
 1   Cataclysm
 2   Fiendish Circle
 2   Hellfire
