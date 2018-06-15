@@ -165,6 +165,7 @@
 2   Curio Collector
 2   Deck of Wonders
 1   Dragon's Fury
+2   Blizzard
 1   Archmage Antonidas
 2   Firelands Portal
 2   Flamestrike
@@ -239,7 +240,7 @@
 2   Purify
 2   Radiant Elemental
 2   Shadow Ascendant
-1   Shadow Visions
+2   Shadow Visions
 2   Shadow Word: Pain
 2   Spirit Lash
 2   Squashling
@@ -341,6 +342,7 @@
 2   Frost Shock
 2   Lightning Bolt
 1   Witch's Apprentice
+1   Ancestral Spirit
 2   Brrrloc
 2   Crushing Hand
 2   Fire Plume Harbinger
@@ -353,7 +355,7 @@
 2   Murmuring Elemental
 2   Primalfin Totem
 2   Rockbiter Weapon
-1   Stormforged Axe
+2   Stormforged Axe
 2   Spirit Claws
 2   Windfury
 2   Drakkari Defender
@@ -410,6 +412,7 @@
 1   Chittering Tunneler
 2   Drain Life
 2   Duskbat
+1   Felguard
 2   Howlfiend
 2   Sense Demons
 2   Shadow Bolt
@@ -425,6 +428,7 @@
 2   Lakkari Felhound
 2   Lesser Amethyst Spellstone
 2   Ravenous Pterrordax
+1   Summoning Portal
 1   Seadevil Stinger
 1   Bane of Doom
 1   Deathweb Spider
@@ -502,6 +506,7 @@
 2   Acherus Veteran
 2   Arcane Anomaly
 2   Argent Squire
+1   Bloodsail Corsair
 2   Deadscale Knight
 2   Dire Mole
 2   Elven Archer
@@ -636,7 +641,7 @@
 2   Tar Creeper
 2   Tauren Warrior
 2   Thrallmar Farseer
-1   Thunder Lizard
+2   Thunder Lizard
 2   Toothy Chest
 2   Vicious Fledgling
 2   Violet Illusionist
@@ -664,7 +669,7 @@
 2   Fire Plume Phoenix
 2   Gnomish Inventor
 2   Grave Shambler
-1   Grim Necromancer
+2   Grim Necromancer
 2   Hoarding Dragon
 2   Hozen Healer
 2   Jade Spirit
@@ -674,7 +679,7 @@
 1   Lifedrinker
 2   Mad Hatter
 1   Kooky Chemist
-1   Mogu'shan Warden
+2   Mogu'shan Warden
 2   Naga Corsair
 2   Night Howler
 2   Oasis Snapjaw
