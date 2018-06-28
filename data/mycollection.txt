@@ -256,7 +256,7 @@
 2   Duskbreaker
 2   Eternal Servitude
 2   Lightspawn
-1   Mass Dispel
+2   Mass Dispel
 2   Priest of the Feast
 2   Shadow Madness
 2   Tortollan Shellraiser
@@ -316,6 +316,7 @@
 1   Fal'dorei Strider
 2   Kobold Illusionist
 2   Master of Disguise
+1   Mistwraith
 2   Obsidian Shard
 2   Runeforge Haunter
 2   WANTED!
@@ -745,7 +746,7 @@
 1   Tomb Lurker
 2   Trogg Gloomeater
 2   Venomancer
-1   Venture Co. Mercenary
+2   Venture Co. Mercenary
 2   Witchwood Grizzly
 2   Archmage
 1   Big-Time Racketeer
