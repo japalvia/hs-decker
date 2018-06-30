@@ -153,7 +153,7 @@
 1   Simulacrum
 1   Spellbender
 1   Cone of Cold
-1   Ethereal Arcanist
+2   Ethereal Arcanist
 2   Fireball
 2   Ghastly Conjurer
 2   Leyline Manipulator
@@ -360,6 +360,7 @@
 2   Spirit Claws
 2   Windfury
 2   Drakkari Defender
+1   Feral Spirit
 2   Healing Rain
 2   Hot Spring Guardian
 2   Ice Breaker
