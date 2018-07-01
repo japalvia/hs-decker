@@ -72,7 +72,7 @@
 1   Explosive Trap
 2   Flare
 2   Freezing Trap
-1   Grievous Bite
+2   Grievous Bite
 2   Hunting Mastiff
 2   Kindly Grandmother
 2   Misdirection
@@ -186,6 +186,7 @@
 1   Repentance
 2   Righteous Protector
 2   Argent Protector
+1   Cathedral Gargoyle
 2   Dark Conviction
 2   Desperate Stand
 2   Drygulch Jailor
@@ -283,6 +284,7 @@
 2   Cold Blood
 2   Deadly Poison
 2   Hallucination
+1   Kingsbane
 2   Sinister Strike
 2   Swashburglar
 2   Betrayal
@@ -304,7 +306,7 @@
 2   Cutthroat Buccaneer
 2   Deadly Fork
 2   Fan of Knives
-1   Mimic Pod
+2   Mimic Pod
 1   Perdition's Blade
 2   Plague Scientist
 1   Shadow Rager
@@ -360,7 +362,7 @@
 2   Spirit Claws
 2   Windfury
 2   Drakkari Defender
-1   Feral Spirit
+2   Feral Spirit
 2   Healing Rain
 2   Hot Spring Guardian
 2   Ice Breaker
@@ -369,7 +371,7 @@
 2   Mana Tide Totem
 2   Primal Talismans
 1   Spirit Echo
-1   Unbound Elemental
+2   Unbound Elemental
 2   Avalanche
 1   Call in the Finishers
 2   Hex
@@ -653,7 +655,7 @@
 2   Wolfrider
 2   Zoobot
 2   Ancient Brewmaster
-1   Ancient Mage
+2   Ancient Mage
 2   Arcanosmith
 1   Barnes
 2   Chillwind Yeti
