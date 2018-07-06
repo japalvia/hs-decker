@@ -295,6 +295,7 @@
 2   Eviscerate
 1   Jade Shuriken
 2   Leeching Poison
+1   Patient Assassin
 1   Pick Pocket
 2   Razorpetal Lasher
 2   Razorpetal Volley
@@ -756,6 +757,7 @@
 2   Bone Drake
 2   Book Wyrm
 2   Boulderfist Ogre
+1   Cairne Bloodhoof
 1   Fight Promoter
 2   Frost Elemental
 2   Furnacefire Colossus
