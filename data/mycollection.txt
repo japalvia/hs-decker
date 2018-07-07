@@ -438,6 +438,7 @@
 1   Bane of Doom
 1   Deathweb Spider
 2   Despicable Dreadlord
+2   Doomguard
 2   Feeding Time
 2   Kara Kazham!
 2   Possessed Lackey
