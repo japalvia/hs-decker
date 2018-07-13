@@ -201,6 +201,7 @@
 2   Howling Commander
 2   Paragon of Light
 2   Nightbane Templar
+1   Sword of Justice
 2   Unidentified Maul
 1   Arrogant Crusader
 2   Bellringer Sentry
@@ -213,7 +214,7 @@
 2   Silvermoon Portal
 2   Truesilver Champion
 2   Ghostly Charger
-1   Holy Wrath
+2   Holy Wrath
 2   Level Up!
 2   Blackguard
 2   Crystal Lion
