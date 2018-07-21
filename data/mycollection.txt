@@ -190,6 +190,7 @@
 2   Dark Conviction
 2   Desperate Stand
 2   Drygulch Jailor
+2   Equality
 2   Holy Light
 2   Hydrologist
 2   Lesser Pearl Spellstone
@@ -667,7 +668,7 @@
 1   Cyclopian Horror
 1   Daring Reporter
 2   Dark Iron Dwarf
-1   Defender of Argus
+2   Defender of Argus
 2   Dragonling Mechanic
 2   Dread Corsair
 2   Ebon Dragonsmith
@@ -763,6 +764,7 @@
 1   Fight Promoter
 2   Frost Elemental
 2   Furnacefire Colossus
+1   Gadgetzan Auctioneer
 1   Hungry Ettin
 2   Lord of the Arena
 2   Moat Lurker
