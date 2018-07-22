@@ -2,6 +2,7 @@
 
 import hscollection as hs
 
+import argparse
 import sys
 
 from PyQt5.QtWidgets import (QApplication, QWidget,
@@ -46,11 +47,10 @@ class CardGrid(QWidget):
         self.grid.addWidget(cardWidget, row, col)
 
 class HSGui(QWidget):
-    def __init__(self):
+    def __init__(self, args):
         super().__init__()
         self.init_ui()
-        self.collection = hs.HSCollection('data/cards.collectible.json',
-                                          'data/mycollection.json')
+        self.collection = hs.HSCollection(args.collectible, args.mycollection)
 
     def init_ui(self):
         self.cardGrid = None
@@ -107,7 +107,17 @@ class HSGui(QWidget):
             self.close()
 
 if __name__ == '__main__':
+    parser = argparse.ArgumentParser(sys.argv[0])
+    parser.add_argument('-c', '--collectible', required=True,
+                        help='cards.collectible.json')
+    parser.add_argument('-m', '--mycollection', required=True,
+                        help='mycollection.json')
+    parser.add_argument('-i', '--images', required=True,
+                        help='path to card image directory')
+    parser.add_argument('-d', '--deck', help='deck string')
+
+    args = parser.parse_args()
 
     app = QApplication(sys.argv)
-    gui = HSGui()
+    gui = HSGui(args)
     sys.exit(app.exec_())
