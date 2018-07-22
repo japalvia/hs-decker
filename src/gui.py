@@ -51,6 +51,8 @@ class HSGui(QWidget):
         super().__init__()
         self.init_ui()
         self.collection = hs.HSCollection(args.collectible, args.mycollection)
+        if (args.deck):
+            self.load_deck(args.deck)
 
     def init_ui(self):
         self.cardGrid = None
@@ -65,7 +67,7 @@ class HSGui(QWidget):
 
         self.textedit = QLineEdit(self)
         vbox.addWidget(self.textedit)
-        self.textedit.returnPressed.connect(self.load_deck)
+        self.textedit.returnPressed.connect(self.textedit_cb)
 
         self.setWindowTitle('HSCollection')
         self.show()
@@ -73,11 +75,15 @@ class HSGui(QWidget):
     def reset_decklabel(self):
         self.decklabel.setText('Copy-paste deck string and press Enter!')
 
-    def load_deck(self):
-        cards_tuple = self.collection.load_deckstring(self.textedit.text())
+    def textedit_cb(self):
+        self.load_deck(self.textedit.text())
+
+    def load_deck(self, deck):
+        cards_tuple = self.collection.load_deckstring(deck)
         if not cards_tuple:
             self.decklabel.setText('Invalid deck string, try again')
             return
+
         self.reset_decklabel()
 
         if self.cardGrid:
