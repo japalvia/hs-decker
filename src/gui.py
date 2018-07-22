@@ -37,7 +37,7 @@ class CardGrid(QWidget):
 
         count_str = '{}'.format(str(found+missing))
         if missing:
-            count_str = '{} ({})'.format(str(found+missing), missing)
+            count_str = '{}/{}'.format(str(found), count_str)
         countLabel = QLabel(count_str, self)
         countLabel.setAlignment(Qt.AlignHCenter)
         countLabel.setStyleSheet("font-family: URW Bookman; font-style: Light;"
