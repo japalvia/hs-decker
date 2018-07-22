@@ -257,9 +257,11 @@ def opts_show_deck(collection, args):
         collection.show_deck(args.deck)
 
 if __name__ == '__main__':
-    parser = argparse.ArgumentParser('hscollection')
-    parser.add_argument('-c', '--collectible', help='cards.collectible.json')
-    parser.add_argument('-m', '--mycollection', help='mycollection.json')
+    parser = argparse.ArgumentParser(sys.argv[0])
+    parser.add_argument('-c', '--collectible', required=True,
+                        help='cards.collectible.json')
+    parser.add_argument('-m', '--mycollection', required=True,
+                        help='mycollection.json')
     parser.add_argument('-r', '--reset', action='store_true',
                         help='reset your collection')
     subparsers = parser.add_subparsers()
