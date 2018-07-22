@@ -17,7 +17,6 @@ class CardWidget(QWidget):
 
 class CardGrid(QWidget):
     def __init__(self):
-        print("CardGrid constructor, new grid layout")
         super().__init__()
         self.grid = QGridLayout(self)
 
@@ -82,13 +81,10 @@ class HSGui(QWidget):
         self.reset_decklabel()
 
         if self.cardGrid:
-            print("remove cardGrid, hide, and drop reference")
             self.layout().removeWidget(self.cardGrid)
             self.cardGrid.hide()
             self.cardGrid = None
         self.cardGrid = CardGrid()
-        #print("frameSize: {} maximumSize: {}".format(cardGrid.frameSize(),
-        #    cardGrid.maximumSize()))
 
         col, row = 0, 0 # we start filling cards from grid pos (0,1)
         for i, card_tuple in enumerate(cards_tuple):
@@ -98,18 +94,13 @@ class HSGui(QWidget):
             self.cardGrid.addCard(card_tuple, row, col)
 
         if self.scrollArea:
-            print("remove from root layout scrollArea")
             self.layout().removeWidget(self.scrollArea)
             self.scrollArea = None
-        print("create scrollArea")
+
         self.scrollArea = QScrollArea(self)
         self.scrollArea.setBackgroundRole(QPalette.Shadow)
-        print("scrollArea: setWidget(cardGrid)")
         self.scrollArea.setWidget(self.cardGrid)
-        print("root layout: add scrollArea")
         self.layout().addWidget(self.scrollArea)
-
-        print("*********")
 
     def keyPressEvent(self, e):
         if e.key() == Qt.Key_Escape:
