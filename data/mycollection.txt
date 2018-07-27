@@ -152,7 +152,7 @@
 2   Mirror Entity
 1   Simulacrum
 1   Spellbender
-1   Cone of Cold
+2   Cone of Cold
 2   Ethereal Arcanist
 2   Fireball
 2   Ghastly Conjurer
@@ -426,7 +426,7 @@
 2   Silverware Golem
 2   Treachery
 2   Unwilling Sacrifice
-1   Void Terror
+2   Void Terror
 2   Blood Witch
 1   Cataclysm
 2   Fiendish Circle
