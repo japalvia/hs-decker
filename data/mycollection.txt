@@ -2,6 +2,7 @@
 2   Innervate
 2   Moonfire
 2   Barkskin
+2   Biology Project
 2   Claw
 2   Earthen Scales
 2   Enchanted Raven
@@ -23,11 +24,13 @@
 2   Gnash
 2   Greedy Sprite
 2   Healing Touch
+2   Landscaping
 2   Mark of Nature
 2   Savage Roar
 2   Bite
 1   Branching Paths
 2   Evolving Spores
+1   Flobbidinous Floop
 2   Forest Guide
 2   Ironwood Golem
 1   Klaxxi Amber-Weaver
@@ -48,11 +51,15 @@
 2   Moonglade Portal
 2   Spreading Plague
 2   Starfire
+2   Tending Tauren
 1   Ancient of Lore
+1   Dreampetal Florist
 1   Giant Anaconda
 1   Malfurion the Pestilent
+2   Gloop Sprayer
 1   Grizzled Guardian
 2   Ironbark Protector
+1   Mulchmuncher
 
 # Hunter
 2   Alleycat
@@ -64,12 +71,16 @@
 2   On the Hunt
 2   Play Dead
 1   Raptor Hatchling
+2   Secret Plan
 2   Timber Wolf
 2   Tracking
+2   Bomb Toss
 2   Cat Trick
 2   Crackling Razormaw
+2   Cybertech Chip
 1   Dinomancy
 1   Explosive Trap
+2   Fireworks Tech
 2   Flare
 2   Freezing Trap
 2   Grievous Bite
@@ -79,6 +90,7 @@
 1   Rat Trap
 2   Scavenging Hyena
 2   Snipe
+2   Venomizer
 2   Venomstrike Trap
 2   Wandering Monster
 2   Animal Companion
@@ -90,6 +102,7 @@
 2   Duskhaven Hunter
 1   Eaglehorn Bow
 2   Kill Command
+1   Spider Bomb
 2   Stitched Tracker
 1   Terrorscale Stalker
 2   Unleash the Hounds
@@ -113,6 +126,7 @@
 1   Crushing Walls
 1   Gladiator's Longbow
 1   Rhok'delar
+1   Flark's Boom-Zooka
 
 # Mage
 2   Shifting Scroll
@@ -123,9 +137,12 @@
 1   Kabal Lackey
 2   Mana Wyrm
 2   Mirror Image
+2   Shooting Star
 2   Arcane Explosion
 2   Arcanologist
+2   Astral Rift
 2   Book of Specters
+2   Celestial Emissary
 2   Flame Geyser
 2   Frostbolt
 2   Ice Walker
@@ -133,6 +150,7 @@
 2   Medivh's Valet
 2   Primordial Glyph
 2   Raven Familiar
+1   Research Project
 2   Shimmering Tempest
 2   Snap Freeze
 2   Sorcerer's Apprentice
@@ -153,6 +171,7 @@
 1   Simulacrum
 1   Spellbender
 2   Cone of Cold
+2   Cosmic Anomaly
 2   Ethereal Arcanist
 2   Fireball
 2   Ghastly Conjurer
@@ -166,6 +185,7 @@
 2   Deck of Wonders
 1   Dragon's Fury
 2   Blizzard
+1   Meteorologist
 1   Archmage Antonidas
 2   Firelands Portal
 2   Flamestrike
@@ -174,9 +194,11 @@
 
 # Paladin
 2   Adaptation
+2   Autodefense Matrix
 2   Blessing of Might
 1   Blessing of Wisdom
 1   Eye for an Eye
+2   Glow-Tron
 2   Hand of Protection
 2   Humility
 2   Light's Justice
@@ -187,6 +209,7 @@
 2   Righteous Protector
 2   Argent Protector
 1   Cathedral Gargoyle
+1   Crystology
 2   Dark Conviction
 2   Desperate Stand
 2   Drygulch Jailor
@@ -204,6 +227,7 @@
 2   Nightbane Templar
 1   Sword of Justice
 2   Unidentified Maul
+1   Annoy-o-Module
 1   Arrogant Crusader
 2   Bellringer Sentry
 2   Blessing of Kings
@@ -217,6 +241,8 @@
 2   Ghostly Charger
 2   Holy Wrath
 2   Level Up!
+2   Mechano-Egg
+2   Shrink Ray
 2   Blackguard
 2   Crystal Lion
 2   Ivory Knight
@@ -228,6 +254,7 @@
 # Priest
 2   Circle of Healing
 2   Silence
+2   Topsy Turvy
 2   Binding Heal
 2   Crystalline Oracle
 2   Holy Smite
@@ -236,6 +263,9 @@
 2   Northshire Cleric
 2   Power Word: Shield
 2   Psionic Probe
+2   Test Subject
+2   Cloning Device
+2   Dead Ringer
 2   Divine Hymn
 2   Divine Spirit
 1   Lightwell
@@ -248,7 +278,9 @@
 2   Spirit Lash
 2   Squashling
 2   Acolyte of Agony
+1   Extra Arms
 2   Gilded Gargoyle
+2   Omega Medic
 2   Kabal Talonpriest
 2   Shadow Word: Death
 2   Thoughtsteal
@@ -266,6 +298,7 @@
 2   Devour Mind
 2   Holy Nova
 2   Holy Water
+1   Power Word: Replicate
 2   Onyx Bishop
 2   Quartz Elemental
 2   Cabal Shadow Priest
@@ -295,10 +328,12 @@
 2   Cheat Death
 2   Defias Ringleader
 2   Eviscerate
+2   Lab Recruiter
 1   Jade Shuriken
 2   Leeching Poison
 1   Patient Assassin
 1   Pick Pocket
+2   Pogo-Hopper
 2   Razorpetal Lasher
 2   Razorpetal Volley
 2   Roll the Bones
@@ -316,7 +351,9 @@
 2   Shadowblade
 2   SI:7 Agent
 1   Sonya Shadowdancer
+2   Violet Haze
 2   Blade Flurry
+1   Blightnozzle Crawler
 2   Elven Minstrel
 1   Fal'dorei Strider
 2   Kobold Illusionist
@@ -328,6 +365,9 @@
 2   Assassinate
 2   Assassin's Blade
 2   Bone Baron
+2   Crazed Chemist
+1   Myra Rotspring
+1   Necrium Vial
 2   Vilespine Slayer
 1   Cursed Castaway
 2   Ethereal Peddler
@@ -338,6 +378,7 @@
 
 # Shaman
 2   Ancestral Healing
+2   Beakered Lightning
 2   Totemic Might
 2   Zap!
 2   Air Elemental
@@ -347,15 +388,18 @@
 2   Forked Lightning
 2   Frost Shock
 2   Lightning Bolt
+1   Voltaic Burst
 1   Witch's Apprentice
 1   Ancestral Spirit
 2   Brrrloc
 2   Crushing Hand
+2   Elementary Reaction
 2   Fire Plume Harbinger
 2   Flametongue Totem
 2   Ghost Light Angler
 2   Ice Fishing
 2   Kobold Hermit
+2   Menacing Nimbus
 2   Murkspark Eel
 2   Maelstrom Portal
 2   Murmuring Elemental
@@ -379,6 +423,7 @@
 1   Call in the Finishers
 2   Hex
 1   Jade Lightning
+1   Thunderhead
 2   Tidal Surge
 2   Wicked Witchdoctor
 2   Windspeaker
@@ -386,6 +431,7 @@
 2   Doomhammer
 2   Volcano
 2   Voodoo Hexxer
+2   Eureka!
 2   Fire Elemental
 1   Grumble, Worldshaker
 1   Moorabi
@@ -406,6 +452,7 @@
 2   Malchezaar's Imp
 2   Mortal Coil
 2   Sanguine Reveler
+2   Soul Infusion
 2   Soulfire
 2   Voidwalker
 2   Witchwood Imp
@@ -413,14 +460,19 @@
 2   Curse of Weakness
 2   Defile
 2   Demonfire
+2   Demonic Project
 2   Drain Soul
+2   Spirit Bomb
 2   Succubus
+1   Void Analyst
 2   Vulgar Homunculus
 1   Chittering Tunneler
+2   Doubling Imp
 2   Drain Life
 2   Duskbat
 1   Felguard
 2   Howlfiend
+2   Nethersoul Buster
 2   Sense Demons
 2   Shadow Bolt
 2   Silverware Golem
@@ -442,6 +494,7 @@
 2   Despicable Dreadlord
 2   Doomguard
 2   Feeding Time
+2   Omega Agent
 2   Kara Kazham!
 2   Possessed Lackey
 2   Tar Lurker
@@ -455,8 +508,10 @@
 2   Inner Rage
 2   Animated Berserker
 2   Charge
+2   Eternium Rover
 2   Iron Hide
 1   Molten Blade
+1   Omega Assembly
 2   N'Zoth's First Mate
 1   Shield Slam
 1   Town Crier
@@ -474,8 +529,10 @@
 2   Heroic Strike
 2   Rampage
 2   Redband Wasp
+2   Rocket Boots
 2   Slam
 2   Warpath
+2   Weapons Project
 2   Bloodsail Cultist
 2   Woodcutter's Axe
 2   Fiery War Axe
@@ -503,6 +560,7 @@
 2   Gemstudded Golem
 2   Ornery Direhorn
 2   Unidentified Shield
+2   Beryllium Nullifier
 1   Gorehowl
 2   Lesser Mithril Spellstone
 2   Tar Lord
@@ -542,7 +600,7 @@
 2   Swamp Leech
 2   Voodoo Doctor
 2   Wax Elemental
-1   Worgen Infiltrator
+2   Worgen Infiltrator
 2   Wretched Tiller
 2   Young Dragonhawk
 1   Young Priestess
@@ -565,7 +623,7 @@
 1   Lorewalker Cho
 2   Lost Spirit
 2   Mad Bomber
-1   Mana Addict
+2   Mana Addict
 1   Mana Wraith
 2   Master Swordsmith
 2   Murloc Tidehunter
