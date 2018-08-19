@@ -133,6 +133,7 @@ class HSCollection:
                 CardSet.ICECROWN.name : 'Knights of the Frozen Throne',
                 CardSet.LOOTAPALOOZA.name : 'Kobolds and Catacombs',
                 CardSet.GILNEAS.name : 'Witchwood',
+                CardSet.BOOMSDAY.name : 'Boomsday Project',
         }
         return switcher.get(card_set, 'Not found:' + card_set)
 
