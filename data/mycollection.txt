@@ -5,6 +5,7 @@
 2   Biology Project
 2   Claw
 2   Earthen Scales
+1   Floop's Glorious Gloop
 2   Enchanted Raven
 2   Naturalize
 2   Lesser Jasper Spellstone
@@ -59,7 +60,7 @@
 2   Gloop Sprayer
 1   Grizzled Guardian
 2   Ironbark Protector
-1   Mulchmuncher
+2   Mulchmuncher
 
 # Hunter
 2   Alleycat
@@ -511,7 +512,7 @@
 2   Eternium Rover
 2   Iron Hide
 1   Molten Blade
-1   Omega Assembly
+2   Omega Assembly
 2   N'Zoth's First Mate
 1   Shield Slam
 1   Town Crier
@@ -623,6 +624,7 @@
 2   Faerie Dragon
 2   Fallen Sun Cleric
 2   Frostwolf Grunt
+1   Galvanizer
 2   Golakka Crawler
 2   Knife Juggler
 2   Kobold Geomancer
@@ -838,7 +840,7 @@
 2   Trogg Gloomeater
 2   Venomancer
 2   Venture Co. Mercenary
-1   Wargear
+2   Wargear
 2   Witchwood Grizzly
 2   Arcane Dynamo
 2   Archmage
