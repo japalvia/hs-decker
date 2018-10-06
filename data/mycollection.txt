@@ -223,6 +223,7 @@
 2   Sound the Bells!
 2   Aldor Peacekeeper
 2   Benevolent Djinn
+2   Divine Favor
 2   Howling Commander
 2   Paragon of Light
 2   Nightbane Templar
@@ -269,7 +270,7 @@
 2   Dead Ringer
 2   Divine Hymn
 2   Divine Spirit
-1   Lightwell
+2   Lightwell
 2   Mind Blast
 2   Purify
 2   Radiant Elemental
@@ -410,6 +411,7 @@
 2   Spirit Claws
 2   Windfury
 2   Drakkari Defender
+1   Far Sight
 2   Feral Spirit
 2   Healing Rain
 2   Hot Spring Guardian
