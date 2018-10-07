@@ -54,6 +54,7 @@
 2   Starfire
 2   Tending Tauren
 1   Ancient of Lore
+1   Ancient of War
 1   Dreampetal Florist
 1   Giant Anaconda
 1   Malfurion the Pestilent
@@ -103,7 +104,7 @@
 2   Duskhaven Hunter
 1   Eaglehorn Bow
 2   Kill Command
-1   Spider Bomb
+2   Spider Bomb
 2   Stitched Tracker
 1   Terrorscale Stalker
 2   Unleash the Hounds
@@ -151,7 +152,7 @@
 2   Medivh's Valet
 2   Primordial Glyph
 2   Raven Familiar
-1   Research Project
+2   Research Project
 2   Shimmering Tempest
 2   Snap Freeze
 2   Sorcerer's Apprentice
@@ -164,7 +165,7 @@
 2   Explosive Runes
 2   Frost Nova
 2   Frozen Clone
-1   Ice Barrier
+2   Ice Barrier
 1   Ice Block
 2   Kirin Tor Mage
 1   Mana Bind
@@ -198,7 +199,7 @@
 2   Autodefense Matrix
 2   Blessing of Might
 1   Blessing of Wisdom
-1   Eye for an Eye
+2   Eye for an Eye
 2   Glow-Tron
 2   Hand of Protection
 2   Humility
@@ -206,11 +207,11 @@
 2   Lost in the Jungle
 2   Noble Sacrifice
 2   Redemption
-1   Repentance
+2   Repentance
 2   Righteous Protector
 2   Argent Protector
 1   Cathedral Gargoyle
-1   Crystology
+2   Crystology
 2   Dark Conviction
 2   Desperate Stand
 2   Drygulch Jailor
@@ -347,6 +348,7 @@
 2   Deadly Fork
 2   Fan of Knives
 2   Mimic Pod
+1   Necrium Blade
 1   Perdition's Blade
 2   Plague Scientist
 1   Shadow Rager
@@ -354,6 +356,7 @@
 2   SI:7 Agent
 1   Sonya Shadowdancer
 2   Violet Haze
+1   Academic Espionage
 2   Blade Flurry
 1   Blightnozzle Crawler
 2   Elven Minstrel
@@ -392,7 +395,7 @@
 2   Lightning Bolt
 1   Voltaic Burst
 1   Witch's Apprentice
-1   Ancestral Spirit
+2   Ancestral Spirit
 2   Brrrloc
 2   Crushing Hand
 2   Elementary Reaction
@@ -490,7 +493,7 @@
 2   Lakkari Felhound
 2   Lesser Amethyst Spellstone
 2   Ravenous Pterrordax
-1   Summoning Portal
+2   Summoning Portal
 1   Seadevil Stinger
 1   Bane of Doom
 1   Deathweb Spider
@@ -503,6 +506,7 @@
 2   Tar Lurker
 2   Cruel Dinomancer
 2   Dread Infernal
+1   Ectomancy
 1   Rin, the First Disciple
 1   Abyssal Enforcer
 1   Bloodreaver Gul'dan
@@ -557,6 +561,7 @@
 1   Darius Crowley
 2   Death Revenant
 1   Direhorn Hatchling
+1   Dyn-o-matic
 2   Festeroot Hulk
 2   Fool's Bane
 2   Ironforge Portal
@@ -571,7 +576,7 @@
 
 # Neutral
 2   Snowflipper Penguin
-1   Wisp
+2   Wisp
 2   Acherus Veteran
 2   Arcane Anomaly
 2   Argent Squire
@@ -659,6 +664,7 @@
 2   Whirliglider
 2   Youthful Brewmaster
 2   Acolyte of Pain
+1   Arcane Golem
 1   Augmented Elekk
 2   Blackwald Pixie
 2   Boisterous Bard
@@ -812,6 +818,7 @@
 2   Corrosive Sludge
 1   Corrupted Healbot
 2   Darkscale Healer
+1   E.M.P. Operative
 2   Fen Creeper
 2   Frostwolf Warlord
 2   Fungalmancer
@@ -899,6 +906,7 @@
 1   Dragonhatcher
 2   Giant Mastodon
 1   Master Oakheart
+1   Nozdormu
 2   Sleepy Dragon
 1   C'Thun
 1   N'Zoth, the Corruptor
