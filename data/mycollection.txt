@@ -628,6 +628,7 @@
 2   Cloakscale Chemist
 2   Crazed Alchemist
 2   Dire Wolf Alpha
+1   Doomsayer
 2   Faerie Dragon
 2   Fallen Sun Cleric
 2   Frostwolf Grunt
@@ -662,6 +663,7 @@
 2   Vicious Scalehide
 2   Volatile Elemental
 2   Whirliglider
+1   Wild Pyromancer
 2   Youthful Brewmaster
 2   Acolyte of Pain
 1   Arcane Golem
