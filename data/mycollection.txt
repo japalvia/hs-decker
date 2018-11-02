@@ -198,7 +198,7 @@
 2   Adaptation
 2   Autodefense Matrix
 2   Blessing of Might
-1   Blessing of Wisdom
+2   Blessing of Wisdom
 2   Eye for an Eye
 2   Glow-Tron
 2   Hand of Protection
@@ -561,7 +561,7 @@
 1   Darius Crowley
 2   Death Revenant
 1   Direhorn Hatchling
-1   Dyn-o-matic
+2   Dyn-o-matic
 2   Festeroot Hulk
 2   Fool's Bane
 2   Ironforge Portal
@@ -695,7 +695,7 @@
 1   Humongous Razorleaf
 2   Hyldnir Frostrider
 2   Igneous Elemental
-1   Imp Master
+2   Imp Master
 2   Injured Blademaster
 2   Ironbeak Owl
 2   Ironforge Rifleman
@@ -742,7 +742,7 @@
 2   Violet Illusionist
 2   Vryghoul
 2   Walnut Sprite
-1   Witch's Cauldron
+2   Witch's Cauldron
 2   Wolfrider
 2   Zoobot
 2   Ancient Brewmaster
@@ -888,6 +888,7 @@
 2   Ravenholdt Assassin
 1   Sated Threshadon
 2   Silver Vanguard
+1   Star Aligner
 2   Stormwind Champion
 1   The Curator
 1   Volcanosaur
