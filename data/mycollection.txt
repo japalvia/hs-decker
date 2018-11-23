@@ -34,6 +34,7 @@
 1   Flobbidinous Floop
 2   Forest Guide
 2   Ironwood Golem
+1   Juicy Psychmelon
 1   Klaxxi Amber-Weaver
 1   Mire Keeper
 2   Oaken Summons
@@ -53,7 +54,7 @@
 2   Spreading Plague
 2   Starfire
 2   Tending Tauren
-1   Ancient of Lore
+2   Ancient of Lore
 1   Ancient of War
 1   Dreampetal Florist
 1   Giant Anaconda
@@ -119,6 +120,7 @@
 2   Corpse Widow
 1   Explosive Shot
 2   Lesser Emerald Spellstone
+1   Necromechanic
 2   Starving Buzzard
 2   Tundra Rhino
 2   Vilebrood Skitterer
@@ -172,6 +174,7 @@
 2   Mirror Entity
 1   Simulacrum
 1   Spellbender
+1   Stargazer Luna
 2   Cone of Cold
 2   Cosmic Anomaly
 2   Ethereal Arcanist
@@ -252,6 +255,7 @@
 1   Spikeridged Steed
 2   Guardian of Kings
 2   Vinecleaver
+1   Lay on Hands
 2   Silver Sword
 
 # Priest
@@ -451,6 +455,7 @@
 # Warlock
 2   Sacrificial Pact
 1   Blood Imp
+1   Call of the Void
 2   Corruption
 2   Dark Pact
 2   Flame Imp
@@ -628,7 +633,7 @@
 2   Cloakscale Chemist
 2   Crazed Alchemist
 2   Dire Wolf Alpha
-1   Doomsayer
+2   Doomsayer
 2   Faerie Dragon
 2   Fallen Sun Cleric
 2   Frostwolf Grunt
@@ -645,6 +650,7 @@
 2   Murloc Tidehunter
 2   Netherspite Historian
 2   Novice Engineer
+1   Pint-Sized Summoner
 2   Plated Beetle
 2   Pompous Thespian
 1   Prince Keleseth
@@ -820,7 +826,7 @@
 2   Corrosive Sludge
 1   Corrupted Healbot
 2   Darkscale Healer
-1   E.M.P. Operative
+2   E.M.P. Operative
 2   Fen Creeper
 2   Frostwolf Warlord
 2   Fungalmancer
@@ -869,7 +875,7 @@
 2   Lord of the Arena
 2   Mechanical Whelp
 2   Moat Lurker
-1   Missile Launcher
+2   Missile Launcher
 2   Necrotic Geist
 2   Priestess of Elune
 2   Reckless Rocketeer
