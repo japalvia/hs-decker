@@ -1,6 +1,7 @@
 # Druid
 2   Innervate
 2   Moonfire
+2   Pounce
 2   Barkskin
 2   Biology Project
 2   Claw
@@ -10,10 +11,12 @@
 2   Naturalize
 2   Lesser Jasper Spellstone
 2   Savagery
+1   Spirit of the Raptor
 2   Witching Hour
 1   Druid of the Swarm
 2   Mark of the Wild
 2   Power of the Wild
+2   Savage Striker
 2   Tortollan Forager
 2   Wild Growth
 2   Witchwood Apple
@@ -35,9 +38,11 @@
 2   Forest Guide
 2   Ironwood Golem
 1   Juicy Psychmelon
+2   Mark of the Loa
 1   Klaxxi Amber-Weaver
 1   Mire Keeper
 2   Oaken Summons
+2   Predatory Instincts
 1   Shellshifter
 2   Soul of the Forest
 1   Strongshell Scavenger
@@ -46,6 +51,8 @@
 2   Druid of the Claw
 1   Force of Nature
 1   Gloom Stag
+2   Nourish
+1   Treespeaker
 2   Verdant Longneck
 2   Webweave
 2   Jade Behemoth
@@ -58,6 +65,7 @@
 1   Ancient of War
 1   Dreampetal Florist
 1   Giant Anaconda
+1   Ironhide Direhorn
 1   Malfurion the Pestilent
 2   Gloop Sprayer
 1   Grizzled Guardian
@@ -75,6 +83,7 @@
 2   Play Dead
 1   Raptor Hatchling
 2   Secret Plan
+2   Springpaw
 2   Timber Wolf
 2   Tracking
 2   Bomb Toss
@@ -87,10 +96,12 @@
 2   Flare
 2   Freezing Trap
 2   Grievous Bite
+2   Headhunter's Hatchet
 2   Hunting Mastiff
 2   Kindly Grandmother
 2   Misdirection
 1   Rat Trap
+1   Revenge of the Wild
 2   Scavenging Hyena
 2   Snipe
 2   Venomizer
@@ -98,6 +109,7 @@
 2   Wandering Monster
 2   Animal Companion
 2   Bearshark
+1   Bloodscalp Strategist
 1   Carrion Grub
 2   Cave Hydra
 2   Cloaked Huntress
@@ -105,7 +117,9 @@
 2   Duskhaven Hunter
 1   Eaglehorn Bow
 2   Kill Command
+2   Master's Call
 2   Spider Bomb
+1   Spirit of the Lynx
 2   Stitched Tracker
 1   Terrorscale Stalker
 2   Unleash the Hounds
@@ -116,6 +130,7 @@
 2   Houndmaster
 2   Multi-Shot
 2   Wing Blast
+2   Baited Arrow
 2   Carrion Drake
 2   Corpse Widow
 1   Explosive Shot
@@ -133,11 +148,13 @@
 1   Flark's Boom-Zooka
 
 # Mage
+1   Elemental Evocation
 2   Shifting Scroll
 2   Arcane Artificer
 2   Arcane Missiles
 2   Babbling Book
 2   Breath of Sindragosa
+2   Daring Fire-Eater
 1   Kabal Lackey
 2   Mana Wyrm
 2   Mirror Image
@@ -158,6 +175,7 @@
 2   Shimmering Tempest
 2   Snap Freeze
 2   Sorcerer's Apprentice
+2   Spirit of the Dragonhawk
 2   Arcane Intellect
 2   Black Cat
 1   Cinderstorm
@@ -172,6 +190,7 @@
 2   Kirin Tor Mage
 1   Mana Bind
 2   Mirror Entity
+1   Pyromaniac
 1   Simulacrum
 1   Spellbender
 1   Stargazer Luna
@@ -185,15 +204,18 @@
 1   Steam Surger
 2   Vex Crow
 2   Water Elemental
+1   Blast Wave
 2   Bonfire Elemental
 2   Curio Collector
 2   Deck of Wonders
 1   Dragon's Fury
+2   Arcanosaur
 2   Blizzard
 1   Meteorologist
 1   Archmage Antonidas
 2   Firelands Portal
 2   Flamestrike
+1   Jan'alai, the Dragonhawk
 1   Glacial Mysteries
 2   Pyroblast
 
@@ -202,6 +224,7 @@
 2   Autodefense Matrix
 2   Blessing of Might
 2   Blessing of Wisdom
+2   Bloodclaw
 2   Eye for an Eye
 2   Glow-Tron
 2   Hand of Protection
@@ -219,8 +242,10 @@
 2   Desperate Stand
 2   Drygulch Jailor
 2   Equality
+2   Flash of Light
 2   Holy Light
 2   Hydrologist
+1   Immortal Prelate
 2   Lesser Pearl Spellstone
 2   Potion of Heroism
 2   Rebuke
@@ -232,6 +257,7 @@
 2   Paragon of Light
 2   Nightbane Templar
 1   Sword of Justice
+2   Time Out!
 2   Unidentified Maul
 1   Annoy-o-Module
 1   Arrogant Crusader
@@ -241,9 +267,13 @@
 2   Consecration
 2   Hammer of Wrath
 1   Light's Sorrow
+1   Spirit of the Tiger
 1   The Glass Knight
 2   Silvermoon Portal
 2   Truesilver Champion
+2   Zandalari Templar
+2   Call to Arms
+2   Farraki Battleaxe
 2   Ghostly Charger
 2   Holy Wrath
 2   Level Up!
@@ -260,6 +290,7 @@
 
 # Priest
 2   Circle of Healing
+2   Regenerate
 2   Silence
 2   Topsy Turvy
 2   Binding Heal
@@ -270,7 +301,9 @@
 2   Northshire Cleric
 2   Power Word: Shield
 2   Psionic Probe
+2   Spirit of the Dead
 2   Test Subject
+1   Auchenai Phantasm
 2   Cloning Device
 2   Dead Ringer
 2   Divine Hymn
@@ -279,6 +312,7 @@
 2   Mind Blast
 2   Purify
 2   Radiant Elemental
+2   Seance
 2   Shadow Ascendant
 2   Shadow Visions
 2   Shadow Word: Pain
@@ -288,8 +322,10 @@
 1   Extra Arms
 2   Gilded Gargoyle
 2   Omega Medic
+2   Sand Drudge
 2   Kabal Talonpriest
 2   Shadow Word: Death
+1   Surrender to Madness
 2   Thoughtsteal
 1   Twilight Acolyte
 2   Twilight's Call
@@ -305,6 +341,7 @@
 2   Devour Mind
 2   Holy Nova
 2   Holy Water
+1   Mass Hysteria
 1   Power Word: Replicate
 2   Onyx Bishop
 2   Quartz Elemental
@@ -313,12 +350,14 @@
 1   Embrace Darkness
 1   Shadow Essence
 2   Temple Enforcer
+1   Bwonsamdi, the Dead
 2   Lesser Diamond Spellstone
 1   Prophet Velen
 1   Temporus
 2   Free From Amber
 1   Shadowreaper Anduin
 2   Mind Control
+1   Grave Horror
 
 # Rogue
 2   Backstab
@@ -327,6 +366,7 @@
 2   Deadly Poison
 2   Hallucination
 1   Kingsbane
+2   Serrated Tooth
 2   Sinister Strike
 2   Swashburglar
 2   Betrayal
@@ -346,6 +386,7 @@
 2   Roll the Bones
 2   Sap
 2   Shiv
+2   Stolen Steel
 2   Sudden Betrayal
 2   Blink Fox
 2   Cutthroat Buccaneer
@@ -355,6 +396,7 @@
 1   Necrium Blade
 1   Perdition's Blade
 2   Plague Scientist
+2   Raiding Party
 1   Shadow Rager
 2   Shadowblade
 2   SI:7 Agent
@@ -370,6 +412,8 @@
 1   Mistwraith
 2   Obsidian Shard
 2   Runeforge Haunter
+1   Spirit of the Shark
+2   Walk the Plank
 2   WANTED!
 2   Assassinate
 2   Assassin's Blade
@@ -383,7 +427,9 @@
 2   Kidnapper
 1   Spectral Pillager
 2   Vanish
+1   Gurubashi Hypemon
 2   Sprint
+1   Captain Hooktusk
 
 # Shaman
 2   Ancestral Healing
@@ -397,7 +443,9 @@
 2   Forked Lightning
 2   Frost Shock
 2   Lightning Bolt
+2   Totemic Smash
 1   Voltaic Burst
+2   Wartbringer
 1   Witch's Apprentice
 2   Ancestral Spirit
 2   Brrrloc
@@ -408,6 +456,7 @@
 2   Ghost Light Angler
 2   Ice Fishing
 2   Kobold Hermit
+2   Likkim
 2   Menacing Nimbus
 2   Murkspark Eel
 2   Maelstrom Portal
@@ -417,9 +466,11 @@
 2   Stormforged Axe
 2   Spirit Claws
 2   Windfury
+2   Bog Slosher
 2   Drakkari Defender
 1   Far Sight
 2   Feral Spirit
+1   Haunting Visions
 2   Healing Rain
 2   Hot Spring Guardian
 2   Ice Breaker
@@ -428,6 +479,7 @@
 2   Mana Tide Totem
 2   Primal Talismans
 1   Spirit Echo
+2   Spirit of the Frog
 2   Unbound Elemental
 2   Avalanche
 1   Call in the Finishers
@@ -445,6 +497,7 @@
 2   Fire Elemental
 1   Grumble, Worldshaker
 1   Moorabi
+2   Rain of Toads
 1   Bogshaper
 1   Al'Akir the Windlord
 1   Kalimos, Primal Lord
@@ -459,10 +512,12 @@
 2   Corruption
 2   Dark Pact
 2   Flame Imp
+2   Grim Rally
 2   Kobold Librarian
 2   Malchezaar's Imp
 2   Mortal Coil
 2   Sanguine Reveler
+2   Shriek
 2   Soul Infusion
 2   Soulfire
 2   Voidwalker
@@ -474,6 +529,7 @@
 2   Demonic Project
 2   Drain Soul
 2   Spirit Bomb
+1   Spirit of the Bat
 2   Succubus
 1   Void Analyst
 2   Vulgar Homunculus
@@ -484,6 +540,7 @@
 1   Felguard
 2   Howlfiend
 2   Nethersoul Buster
+2   Reckless Diretroll
 2   Sense Demons
 2   Shadow Bolt
 2   Silverware Golem
@@ -514,18 +571,22 @@
 1   Ectomancy
 1   Rin, the First Disciple
 1   Abyssal Enforcer
+2   Blood Troll Sapper
+2   Demonbolt
 1   Bloodreaver Gul'dan
 
 # Warrior
 2   Inner Rage
 2   Animated Berserker
 2   Charge
+2   Devastate
 2   Eternium Rover
 2   Iron Hide
 1   Molten Blade
 2   Omega Assembly
 2   N'Zoth's First Mate
 1   Shield Slam
+2   Spirit of the Rhino
 1   Town Crier
 2   Upgrade!
 2   Whirlwind
@@ -535,6 +596,7 @@
 2   Commanding Shout
 2   Cornered Sentry
 2   Cruel Taskmaster
+2   Dragon Roar
 2   Drywhisker Armorer
 2   Execute
 2   Forge of Souls
@@ -552,6 +614,7 @@
 2   Grimestreet Pawnbroker
 2   Kobold Barbarian
 1   Mountainfire Armor
+2   Overlord's Whip
 2   Rabid Worgen
 2   Protect the King!
 2   Shield Block
@@ -567,10 +630,12 @@
 2   Death Revenant
 1   Direhorn Hatchling
 2   Dyn-o-matic
+1   Emberscale Drake
 2   Festeroot Hulk
 2   Fool's Bane
 2   Ironforge Portal
 2   Gemstudded Golem
+2   Heavy Metal!
 2   Ornery Direhorn
 2   Unidentified Shield
 2   Beryllium Nullifier
@@ -600,6 +665,9 @@
 2   Goldshire Footman
 2   Gravelsnout Knight
 2   Grimscale Oracle
+2   Gurubashi Chicken
+2   Gurubashi Offering
+2   Helpless Hatchling
 1   Hungry Crab
 2   Leper Gnome
 1   Lightwarden
@@ -607,6 +675,7 @@
 2   Murloc Raider
 2   Murloc Tidecaller
 2   Runic Egg
+2   Saronite Taskmaster
 2   Secretkeeper
 2   Shieldbearer
 2   Skaterbot
@@ -627,13 +696,16 @@
 2   Ancient Watcher
 2   Baleful Banker
 2   Beckoner of Evil
+2   Belligerent Gnome
 2   Bloodfen Raptor
 2   Bloodsail Raider
 2   Bluegill Warrior
+2   Cheaty Anklebiter
 2   Cloakscale Chemist
 2   Crazed Alchemist
 2   Dire Wolf Alpha
 2   Doomsayer
+2   Dozing Marksman
 2   Faerie Dragon
 2   Fallen Sun Cleric
 2   Frostwolf Grunt
