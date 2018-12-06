@@ -32,8 +32,9 @@ Prerequisites
 Usage
 -----
 
-* Bootstrap card data once:
-./src/bootstrap.py
+* Bootstrap card data:
+  ./src/bootstrap.py
+  New cards are introduced with new expansion, re-run as needed
 
 * Every operation requires specifying the location of card data and your
   collection (when saved to disk):
