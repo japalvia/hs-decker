@@ -706,6 +706,7 @@
 2   Dire Wolf Alpha
 2   Doomsayer
 2   Dozing Marksman
+2   Firetree Witchdoctor
 2   Faerie Dragon
 2   Fallen Sun Cleric
 2   Frostwolf Grunt
@@ -729,8 +730,11 @@
 2   Ravasaur Runt
 2   River Crocolisk
 1   Rockpool Hunter
+2   Scarab Egg
 2   Scorp-o-matic
+2   Sharkfin Fan
 2   Spellshifter
+2   Spellzerker
 2   Stubborn Gastropod
 1   Sunfury Protector
 2   Tainted Zealot
@@ -740,12 +744,14 @@
 2   Upgradeable Framebot
 2   Vicious Scalehide
 2   Volatile Elemental
+1   Waterboy
 2   Whirliglider
 1   Wild Pyromancer
 2   Youthful Brewmaster
 2   Acolyte of Pain
 1   Arcane Golem
 1   Augmented Elekk
+2   Banana Buffoon
 2   Blackwald Pixie
 2   Boisterous Bard
 2   Brainstormer
@@ -758,6 +764,7 @@
 2   Disciple of C'Thun
 2   Dragonslayer
 1   Drakkari Enchanter
+1   Drakkari Trickster
 2   Earthen Ring Farseer
 2   Eggnapper
 2   Electrowright
@@ -788,6 +795,7 @@
 2   Microtech Controller
 2   Mindbreaker
 1   Murloc Warleader
+2   Ornery Tortoise
 1   Phantom Militia
 1   Moroes
 2   Pantry Spider
@@ -816,6 +824,8 @@
 2   Thrallmar Farseer
 2   Thunder Lizard
 2   Toothy Chest
+1   Untamed Beastmaster
+1   Untamed Beastmaster
 2   Vicious Fledgling
 2   Violet Illusionist
 2   Vryghoul
@@ -826,6 +836,8 @@
 2   Ancient Brewmaster
 2   Ancient Mage
 2   Arcanosmith
+2   Arena Fanatic
+2   Arena Treasure Chest
 1   Barnes
 2   Chillwind Yeti
 2   Coppertail Imposter
@@ -845,6 +857,7 @@
 2   Gnomish Inventor
 2   Grave Shambler
 2   Grim Necromancer
+2   Half-Time Scavenger
 2   Hoarding Dragon
 2   Hozen Healer
 2   Jade Spirit
@@ -861,7 +874,9 @@
 2   Ogre Magi
 2   Phantom Freebooter
 2   Piloted Reaper
+2   Regeneratin' Thug
 2   Replicating Menace
+2   Rumbletusk Shaker
 1   Sandbinder
 2   Saronite Chain Gang
 1   Scaleworm
@@ -876,6 +891,7 @@
 2   Stormwind Knight
 2   Swift Messenger
 1   Tanaris Hogchopper
+1   Ticket Scalper
 2   Ticking Abomination
 2   Tol'vir Stoneshaper
 2   Twilight Drake
@@ -886,6 +902,7 @@
 2   Worgen Greaser
 1   Abomination
 1   Arcane Tyrant
+2   Arena Patron
 2   Avian Watcher
 1   Bittertide Hydra
 2   Bloodworm
@@ -898,8 +915,10 @@
 2   Corrosive Sludge
 1   Corrupted Healbot
 2   Darkscale Healer
+2   Dragonmaw Scorcher
 2   E.M.P. Operative
 2   Fen Creeper
+1   Former Champ
 2   Frostwolf Warlord
 2   Fungalmancer
 2   Furbolg Mossbinder
@@ -916,8 +935,10 @@
 1   Seaforium Bomber
 1   Prince Malchezaar
 2   Servant of Kalimos
+2   Sightless Ranger
 2   Silver Hand Knight
 2   Skelemancer
+1   Snapjaw Shellfighter
 2   Spiteful Smith
 2   Stampeding Kodo
 2   Stormpike Commando
@@ -942,7 +963,7 @@
 1   Fight Promoter
 2   Frost Elemental
 2   Furnacefire Colossus
-1   Gadgetzan Auctioneer
+2   Gadgetzan Auctioneer
 1   Hungry Ettin
 2   Lord of the Arena
 2   Mechanical Whelp
@@ -956,6 +977,7 @@
 1   Spark Drill
 2   Spellweaver
 2   Windfury Harpy
+2   Amani War Bear
 1   Azalina Soulthief
 2   Bonemare
 2   Core Hound
@@ -963,6 +985,7 @@
 2   Darkmire Moonkin
 2   Furious Ettin
 1   Grotesque Dragonhawk
+2   Rabble Bouncer
 2   Ravenholdt Assassin
 1   Sated Threshadon
 2   Silver Vanguard
@@ -980,6 +1003,7 @@
 1   Gruul
 1   Marin the Fox
 1   Medivh, the Guardian
+2   Mosh'ogg Enforcer
 1   The Lich King
 2   Violet Wurm
 1   Baku the Mooneater
@@ -988,6 +1012,7 @@
 2   Giant Mastodon
 1   Master Oakheart
 1   Nozdormu
+1   Oondasta
 2   Sleepy Dragon
 1   C'Thun
 1   N'Zoth, the Corruptor
