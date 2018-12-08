@@ -134,6 +134,7 @@ class HSCollection:
                 CardSet.LOOTAPALOOZA.name : 'Kobolds and Catacombs',
                 CardSet.GILNEAS.name : 'Witchwood',
                 CardSet.BOOMSDAY.name : 'Boomsday Project',
+                CardSet.TROLL.name : 'Rastakhan\'s Rumble',
         }
         return switcher.get(card_set, 'Not found:' + card_set)
 
