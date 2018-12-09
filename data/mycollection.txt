@@ -976,6 +976,7 @@
 2   Skulking Geist
 1   Spark Drill
 2   Spellweaver
+1   Sunwalker
 2   Windfury Harpy
 2   Amani War Bear
 1   Azalina Soulthief
