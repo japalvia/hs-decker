@@ -217,6 +217,37 @@ class HSCollection:
             if c['set'] == n:
                 self.add_card(c['name'], 2)
 
+    def match_name(self, search_str, cards=None):
+        results = []
+        search_str = search_str.casefold()
+        if cards is None:
+            cards = self.mycollection
+
+        for card in cards:
+            if search_str in card['name'].casefold():
+                results.append(card)
+        return results
+
+    def match_rarity(self, search_rarity, cards=None):
+        results = []
+        if cards is None:
+            cards = self.mycollection
+
+        for card in cards:
+            if search_rarity == Rarity[card['rarity']]:
+                results.append(card)
+        return results
+
+    def match_set(self, search_set, cards=None):
+        results = []
+        if cards is None:
+            cards = self.mycollection
+
+        for card in cards:
+            if search_set == CardSet[card['set']]:
+                results.append(card)
+        return results
+
 def usage_card_sets():
     usage = ''
     for s in CardSet:
@@ -242,7 +273,6 @@ def cardset_enums():
     return enums
 
 def rarity_enums():
-    enums = []
     # Filter out unusable enums
     r = range(len(Rarity))[Rarity.COMMON:Rarity.LEGENDARY+1]
     return list(r)
@@ -273,7 +303,40 @@ def opts_show_deck(collection, args):
         collection.show_deck(args.deck)
 
 def opts_query_cards(collection, args):
-    print("dummy query results")
+    results = []
+    name_matches = None
+    rarity_matches = None
+    set_matches = None
+
+    # Start with None sub-results, each match returns list with 0 or more
+    # cards.
+    if args.set:
+        set_matches = collection.match_set(args.set)
+        #for i in set_matches:
+        #    print("{}".format(i['name']))
+    if args.rarity:
+        # if set was specified in query, set_matches will be a list object now
+        rarity_matches = collection.match_rarity(args.rarity, set_matches)
+        #for i in rarity_matches:
+        #    print("{}".format(i['name']))
+    if args.card:
+        name_matches = collection.match_name(args.card, rarity_matches)
+        #for i in name_matches:
+        #    print("{}".format(i['name']))
+
+    if name_matches:
+        results = name_matches
+    elif rarity_matches:
+        results = rarity_matches
+    elif set_matches:
+        results = set_matches
+    else:
+        print("Nothing found")
+        return
+
+    for i in results:
+        print("{}".format(i['name']))
+
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(sys.argv[0])
@@ -306,13 +369,15 @@ if __name__ == '__main__':
     deckparser.set_defaults(func=opts_show_deck)
 
     queryparser = subparsers.add_parser('query',
-                                        help='list your cards matching a query',
+                                        help='list your cards matching a query. '\
+    					'Optional arguments can be specified only once',
 					formatter_class=argparse.RawTextHelpFormatter)
-    queryparser.add_argument('-n', '--name', help='case insensitive search string')
-    queryparser.add_argument('-s', '--set', action='append', type=int,
+    queryparser.add_argument('-c', '--card',
+                             help='card name (case insensitive) search string')
+    queryparser.add_argument('-s', '--set', type=int,
                            choices=cardset_enums(),
                            help=usage_card_sets())
-    queryparser.add_argument('-r', '--rarity', action='append', type=int,
+    queryparser.add_argument('-r', '--rarity', type=int,
                            choices=rarity_enums(),
                            help=usage_rarity())
     queryparser.set_defaults(func=opts_query_cards)
