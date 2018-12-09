@@ -226,12 +226,26 @@ def usage_card_sets():
                                        os.linesep)
     return usage
 
+def usage_rarity():
+    usage = ''
+    enums = rarity_enums()
+    for r in enums:
+        usage = '{}{}{}{}'.format(usage, str(r).ljust(7, '.'),
+                                Rarity(r).name, os.linesep)
+    return usage
+
 def cardset_enums():
     enums = []
     for s in CardSet:
         if s.is_standard:
             enums.append(s.value)
     return enums
+
+def rarity_enums():
+    enums = []
+    # Filter out unusable enums
+    r = range(len(Rarity))[Rarity.COMMON:Rarity.LEGENDARY+1]
+    return list(r)
 
 def bad_usage(msg):
     sys.exit('ERROR: {}'.format(msg))
@@ -257,6 +271,9 @@ def opts_rem_cards(collection, args):
 def opts_show_deck(collection, args):
     if args.deck:
         collection.show_deck(args.deck)
+
+def opts_query_cards(collection, args):
+    print("dummy query results")
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(sys.argv[0])
@@ -287,6 +304,19 @@ if __name__ == '__main__':
                                        help='display a deck using your collection')
     deckparser.add_argument('deck', help='deck string')
     deckparser.set_defaults(func=opts_show_deck)
+
+    queryparser = subparsers.add_parser('query',
+                                        help='list your cards matching a query',
+					formatter_class=argparse.RawTextHelpFormatter)
+    queryparser.add_argument('-n', '--name', help='case insensitive search string')
+    queryparser.add_argument('-s', '--set', action='append', type=int,
+                           choices=cardset_enums(),
+                           help=usage_card_sets())
+    queryparser.add_argument('-r', '--rarity', action='append', type=int,
+                           choices=rarity_enums(),
+                           help=usage_rarity())
+    queryparser.set_defaults(func=opts_query_cards)
+
 
     args = parser.parse_args()
 
