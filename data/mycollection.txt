@@ -11,7 +11,7 @@
 2   Naturalize
 2   Lesser Jasper Spellstone
 2   Savagery
-1   Spirit of the Raptor
+2   Spirit of the Raptor
 2   Witching Hour
 1   Druid of the Swarm
 2   Mark of the Wild
@@ -746,7 +746,7 @@
 2   Volatile Elemental
 1   Waterboy
 2   Whirliglider
-1   Wild Pyromancer
+2   Wild Pyromancer
 2   Youthful Brewmaster
 2   Acolyte of Pain
 1   Arcane Golem
@@ -891,7 +891,7 @@
 2   Stormwind Knight
 2   Swift Messenger
 1   Tanaris Hogchopper
-1   Ticket Scalper
+2   Ticket Scalper
 2   Ticking Abomination
 2   Tol'vir Stoneshaper
 2   Twilight Drake
@@ -927,6 +927,7 @@
 2   Guild Recruiter
 2   Gurubashi Berserker
 1   Harrison Jones
+1   Leeroy Jenkins
 2   Menagerie Magician
 1   Nesting Roc
 2   Nightblade
