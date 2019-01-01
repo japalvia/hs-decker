@@ -160,6 +160,7 @@
 2   Mana Wyrm
 2   Mirror Image
 2   Shooting Star
+1   Tome of Intellect
 2   Arcane Explosion
 2   Arcanologist
 2   Astral Rift
