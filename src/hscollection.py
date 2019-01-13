@@ -217,35 +217,51 @@ class HSCollection:
             if c['set'] == n:
                 self.add_card(c['name'], 2)
 
-    def match_name(self, search_str, cards=None):
+    def query_cards(self, queries={}):
+        # Return True if card name contains the given string.
+        # Case-insensitive match.
+        def namesearch(card, name):
+            if not name or not card:
+                return []
+            return name.casefold() in card['name'].casefold()
+
+        # Return True if card rarity matches the given rarity enumeration
+        def raritysearch(card, rarity):
+            if not card:
+                return []
+            return rarity == Rarity[card['rarity']]
+
+        # Return True if card set matches the given set enumeration
+        def setsearch(card, card_set):
+            if not card:
+                return []
+            return card_set == CardSet[card['set']]
+
+        def recursive_query(queries, card):
+            key, value = queries.popitem()
+            if key == 'name' and namesearch(card, value):
+                if not queries:
+                    return card
+                return recursive_query(queries, card)
+            elif key == 'set' and setsearch(card, value):
+                if not queries:
+                    return card
+                return recursive_query(queries, card)
+            elif key == 'rarity' and raritysearch(card, value):
+                if not queries:
+                    return card
+                return recursive_query(queries, card)
+            else:
+                return None
+
         results = []
-        search_str = search_str.casefold()
-        if cards is None:
-            cards = self.mycollection
 
-        for card in cards:
-            if search_str in card['name'].casefold():
-                results.append(card)
-        return results
+        for card in self.mycollection:
+            copy_queries = dict(queries)
+            res = recursive_query(copy_queries, card)
+            if res:
+                results.append(res)
 
-    def match_rarity(self, search_rarity, cards=None):
-        results = []
-        if cards is None:
-            cards = self.mycollection
-
-        for card in cards:
-            if search_rarity == Rarity[card['rarity']]:
-                results.append(card)
-        return results
-
-    def match_set(self, search_set, cards=None):
-        results = []
-        if cards is None:
-            cards = self.mycollection
-
-        for card in cards:
-            if search_set == CardSet[card['set']]:
-                results.append(card)
         return results
 
 def usage_card_sets():
@@ -303,40 +319,17 @@ def opts_show_deck(collection, args):
         collection.show_deck(args.deck)
 
 def opts_query_cards(collection, args):
-    results = []
-    name_matches = None
-    rarity_matches = None
-    set_matches = None
-
-    # Start with None sub-results, each match returns list with 0 or more
-    # cards.
-    if args.set:
-        set_matches = collection.match_set(args.set)
-        #for i in set_matches:
-        #    print("{}".format(i['name']))
-    if args.rarity:
-        # if set was specified in query, set_matches will be a list object now
-        rarity_matches = collection.match_rarity(args.rarity, set_matches)
-        #for i in rarity_matches:
-        #    print("{}".format(i['name']))
+    query = {}
     if args.card:
-        name_matches = collection.match_name(args.card, rarity_matches)
-        #for i in name_matches:
-        #    print("{}".format(i['name']))
+        query['name'] = args.card
+    if args.set:
+        query['set'] = args.set
+    if args.rarity:
+        query['rarity'] = args.rarity
 
-    if name_matches:
-        results = name_matches
-    elif rarity_matches:
-        results = rarity_matches
-    elif set_matches:
-        results = set_matches
-    else:
-        print("Nothing found")
-        return
-
+    results = collection.query_cards(query)
     for i in results:
         print("{}".format(i['name']))
-
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(sys.argv[0])
