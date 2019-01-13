@@ -109,7 +109,7 @@
 2   Wandering Monster
 2   Animal Companion
 2   Bearshark
-1   Bloodscalp Strategist
+2   Bloodscalp Strategist
 1   Carrion Grub
 2   Cave Hydra
 2   Cloaked Huntress
@@ -341,6 +341,7 @@
 2   Eternal Servitude
 2   Lightspawn
 2   Mass Dispel
+1   Mindgames
 2   Priest of the Feast
 2   Shadow Madness
 2   Tortollan Shellraiser
